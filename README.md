@@ -1,5 +1,7 @@
 # Javascript Tutorial
 
+## Basic to Advance JS
+* [Fundamentals in one video](https://www.youtube.com/watch?v=hNYzV87wocY)
 
 ## Advance
 * [Event Loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
