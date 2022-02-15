@@ -1,4 +1,5 @@
 # Media
+First learn [media-application-basics](https://web.dev/media-application-basics)
 
 ## Prepare Media files for the web
 * [Prepare-media-files-for-the-web](https://web.dev/media/#prepare-media-files-for-the-web)
