@@ -13,3 +13,9 @@ Pick any one from the following and learn till the end. If you follow sequencial
 
 ## Learn CSS:
 * https://web.dev/learn/css
+
+## Web Components
+Components are the building blocks of modern web applications.
+
+* [Fundamentals](https://developers.google.com/web/fundamentals/web-components)
+* [ShadowDOM](https://developers.google.com/web/fundamentals/web-components/shadowdom)
