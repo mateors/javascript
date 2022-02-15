@@ -5,10 +5,10 @@ Pick any one from the following and learn till the end. If you follow sequencial
 ## Responsive Design:
 * https://web.dev/learn/design
 
-## PWA-Progressive Web App:
+## PWA - Progressive Web App:
 * https://web.dev/learn/pwa
 
-## Learn Forms:
+## Learn HTML Forms:
 * https://web.dev/learn/forms
 
 ## Learn CSS:
