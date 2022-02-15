@@ -18,4 +18,5 @@ Pick any one from the following and learn till the end. If you follow sequencial
 Components are the building blocks of modern web applications.
 
 * [Fundamentals](https://developers.google.com/web/fundamentals/web-components)
-* [ShadowDOM](https://developers.google.com/web/fundamentals/web-components/shadowdom)
+* [Custom Elements](https://developers.google.com/web/fundamentals/web-components/customelements)
+* [Shadow DOM](https://developers.google.com/web/fundamentals/web-components/shadowdom)
