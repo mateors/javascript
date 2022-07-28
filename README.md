@@ -12,6 +12,7 @@
 
 ## Promises (JavaScript exceptions and promises)
 * https://web.dev/promises
+* https://dev.to/saroj990/mastering-javascript-promises-4kfh
 
 ## Service Workers
 A service worker is a script that your browser runs in the background, separate from a web page, opening the door to features that don't need a web page or user interaction.
