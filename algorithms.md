@@ -9,7 +9,7 @@ Divide & conquer isn’t a simple algorithm that you can apply to a problem. Ins
 doesn’t go into an ininite loop.
 
 ### Problem Statement:
-Write a recursion function recursionSum that takes an array of numbers and returns the sum of all the numbers in the array.
+Write a recursion function that takes an array of numbers and returns the sum of all the numbers in the array.
 
 #### Args:
   arrs: an array of numbers
