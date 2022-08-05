@@ -8,7 +8,14 @@ Divide & conquer isn’t a simple algorithm that you can apply to a problem. Ins
 > When you write a recursive function, you have to tell it when to stop recursing. hat’s why every recursive function has two parts: the base case, and the recursive case. he recursive case is when the function calls itself. he base case is when the function doesn’t call itself again … so it
 doesn’t go into an ininite loop.
 
+### Problem Statement:
+Write a recursion function recursionSum that takes an array of numbers and returns the sum of all the numbers in the array.
 
+#### Args:
+  arrs: an array of numbers
+#### Returns:
+  The sum of the array
+  
 ```js
 function recursionSum(arrs){
     if (arrs.length===0){
