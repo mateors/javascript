@@ -31,6 +31,6 @@ function recursionSum(arrs){
 
 ### usage
 ```
-let result=recursionSum([2,4,6,10]);
-console.log(result);
+let result=recursionSum([2,6,10]);
+console.log(result); // 18
 ```
