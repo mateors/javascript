@@ -20,3 +20,21 @@ for (const grd of grades) {
 // grades.forEach(element => {
 //     console.log(element);
 // });
+
+function possibleChanges(usernames) {
+    var ans = [];
+    for (var i = 0; i < usernames.length; i++) {
+        for (var j = 0; j < usernames[i].length - 1; j++) {
+
+            console.log(`${usernames[i][j]}-${usernames[i][j+1]}`);
+            if (usernames[i][j] > usernames[i][j + 1]) {
+                ans.push("YES");
+                break;
+            }
+        }
+        if (ans.length == i) {
+            ans.push("NO");
+        }
+    }
+    return ans;
+}
