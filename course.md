@@ -33,3 +33,11 @@ console.log('this prints last')
 ```
 Each console.log() instruction prints on a new line.
 
+
+### Syntax Errors
+Syntax is jargon for "valid code that the computer can understand". For example,
+
+```js 
+consol.log('hello world')
+```
+is invalid **syntax** because ```consol.log()``` is not a valid function, "consol" is spelled incorrectly. As a result, an error will be thrown and the code won't execute.
