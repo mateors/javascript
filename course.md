@@ -83,3 +83,14 @@ console.log(speed)
 The line `speed = 20` reassigns the value of `speed` to 20. It overwrites whatever was being held in the `speed` variable before.
 
 Notice that we don't use the keyword `let` again. That's because `let` is only used to declare a new variable. If we're just changing the value of an existing variable then we don't need to redeclare the variable name using `let`.
+
+## Let's do some math
+Now that we know how to store and change the value of variables let's do some math!
+
+Here are some examples of common mathematical operators in JavaScript syntax.
+```js
+let sum = a + b
+let difference = a - b
+let product = a * b
+let quotient = a / b
+```
