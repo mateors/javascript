@@ -295,3 +295,31 @@ let playHealthNumber = 100
 playHealthString == playHealthNumber // true
 playHealthString === playHealthNumber // false
 ```
+
+## Comparison Operator Evaluations
+When a comparison happens, the result of the comparison is just a boolean value, it's either `true` or `false`.
+
+Take the following two examples:
+```js
+let isBigger = 5 > 4
+```
+```js
+let isBigger = true
+```
+
+In both of the above cases, we're creating a `Boolean` variable called `isBigger` with a value of `true`.
+
+Since `5 > 4` `isBigger` is always assigned the value of `true`.
+
+### Why Would I Use The Comparison If I Can Just Set it to "true"?
+You wouldn't in this case. However, let's imagine that instead of hard coding the numbers `5` and `4`, we had some dynamic variables that we don't know the values of. For example, perhaps you're making a video game and need to keep track of player scores.
+
+In order to calculate who wins, you would need to write something like:
+
+```js
+// playerOnePoints and playerTwoPoints are defined and change somewhere else in the game's code
+let playerOneWins = playerOnePoints > playerTwoPoints
+console.log(playerOneWins)
+
+// prints "true" when player one is winning, otherwise prints "false"
+```
