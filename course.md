@@ -264,14 +264,14 @@ When coding it's necessary to be able to compare two values. `Boolean logic` is 
 
 The operators:
 
-* < "less than"
-* > "greater than"
-* <= "less than or equal to"
-* >= "greater than or equal to"
-* == "equal value"
-* === "equal type and equal value"
-* != "not equal value"
-* !== "not equal type or not equal value"
+* `<` "less than"
+* `>` "greater than"
+* `<=` "less than or equal to"
+* `>=` "greater than or equal to"
+* `==` "equal value"
+* `===` "equal type and equal value"
+* `!=` "not equal value"
+* `!==` "not equal type or not equal value"
 
 For example:
 ```js
