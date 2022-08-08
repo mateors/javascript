@@ -341,3 +341,19 @@ playerScore = playerScore - 1
 Don't let the fact that the expression `playerScore = playerScore - 1` is not a valid mathematical expression be confusing. It doesn't matter, it is valid code. It's valid because the way the expression should be read in english is:
 
 `Assign to playerScore the old value of playerScore minus 1.`
+
+## Increment / Decrement
+If we're changing a number and simply want to increment (add one) or decrement (minus one) there are special operators for that.
+
+```js
+let myNum = 4
+myNum++
+// shieldArmor now equals 5
+```
+```js
+let myNum = 4
+myNum--
+// shieldArmor now equals 3
+```
+
+Notice that `myNum++` is just short-hand for `myNum = myNum + 1`
