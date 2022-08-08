@@ -100,3 +100,25 @@ Creating negative numbers in JavaScript works the way you probably expect, just 
 ```js
 let myNegativeNum = -1
 ```
+
+## Comments
+Comments don't run like code, they are ignored by the computer. Comments are useful for adding reminders or explaining what a piece of code does in plain english.
+
+There are two ways to add comments to code in JavaScript.
+
+### Single line comment
+```js
+// speed is a variable describing how fast your player moves
+let speed = 2
+```
+
+### Multi-line comment
+```js 
+/*
+    The armor value reduces
+    the amount of damage that is taken when
+    a character gets hit by a bullet
+*/
+let armor = 20
+```
+Single line comments are best for one or two line explanations. Multi-line comments are best when you have a larger comment so that you don't need to type `//` over and over to start each line.
