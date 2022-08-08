@@ -94,3 +94,9 @@ let difference = a - b
 let product = a * b
 let quotient = a / b
 ```
+
+### Let's do some more math
+Creating negative numbers in JavaScript works the way you probably expect, just add a minus sign in front of a number.
+```js
+let myNegativeNum = -1
+```
