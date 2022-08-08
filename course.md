@@ -376,3 +376,24 @@ if (math < english){
   console.log('You should do good in math as well!')
 }
 ```
+
+## If-Else
+An if statement can be followed by zero or more else if statements, which can be followed by zero or one else statement. For example:
+
+```js
+if (score > highScore){
+  console.log('High score beat!')
+} else if (score > secondHighestScore){
+  console.log('You got second place!')
+} else if (score > thirdHighestScore){
+  console.log('You got third place!')
+} else {
+  console.log('Better luck next time')
+}
+```
+
+First the `if` statement is evaluated. If it is `true` then the if statement's body is executed and all the other `else`S are ignored.
+
+If the first `if` is false then the next `else if` is evaluated. Likewise if it is true then its body is executed and the rest are ignored.
+
+If none of the `if` statements evaluate to `true` then the final `else` statement will be the only body executed.
