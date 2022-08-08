@@ -41,3 +41,16 @@ Syntax is jargon for "valid code that the computer can understand". For example,
 consol.log('hello world')
 ```
 is invalid **syntax** because ```consol.log()``` is not a valid function, "consol" is spelled incorrectly. As a result, an error will be thrown and the code won't execute.
+
+### What does syntax mean?
+> Valid code in a programming language.
+
+JavaScript we can use single quotes: `'`, while in Go we need to use double quotes to enclose a string of text: `"`.
+
+Code can have many different problems that prevent it from working as intended.
+* A bug in the logic. (example: a program that should add numbers multiplies them instead)
+* A problem with speed.
+* A problem with syntax. This is the most common problem for new developers.
+
+### What happens if you try to run code with invalid syntax?
+You will be provided a syntax error and the code would not execute.
