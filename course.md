@@ -54,3 +54,32 @@ Code can have many different problems that prevent it from working as intended.
 
 ### What happens if you try to run code with invalid syntax?
 You will be provided a syntax error and the code would not execute.
+
+## Variables
+Variables are how we store data in our program.
+
+A variable is a name that we define that will point to some data. For example, I could define a new variable called myHeight and set its value to 140. I could also define a variable called myName and set it equal to "Mostain Billah".
+
+### How we create variable?
+
+### Let
+To create a new variable we use the let keyword:
+
+```js
+let myHeight = 140;
+let myName = "Mostain";
+```
+
+### Variables Vary
+Variables are called "variables" because they can hold any value and that value can change (it varies).
+
+For example, the following will print 20:
+```js
+let speed = 10
+speed = 20
+console.log(speed)
+```
+
+The line `speed = 20` reassigns the value of `speed` to 20. It overwrites whatever was being held in the `speed` variable before.
+
+Notice that we don't use the keyword `let` again. That's because `let` is only used to declare a new variable. If we're just changing the value of an existing variable then we don't need to redeclare the variable name using `let`.
