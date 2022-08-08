@@ -24,3 +24,12 @@ console.log(4 + 3)
 // prints 3
 ```
 
+### Multiple Instructions
+Code runs in order, starting at the top of the program. For example:
+```js
+console.log('this prints first')
+console.log('this prints second')
+console.log('this prints last')
+```
+Each console.log() instruction prints on a new line.
+
