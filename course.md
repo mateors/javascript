@@ -357,3 +357,22 @@ myNum--
 ```
 
 Notice that `myNum++` is just short-hand for `myNum = myNum + 1`
+
+## If Statements
+It's often useful to only execute code if a certain condition is met:
+
+```js
+if (CONDITION){
+  // do some stuff
+}
+```
+
+for example:
+```js
+let math=50
+let english=80
+
+if (math < english){
+  console.log('You should do good in math as well!')
+}
+```
