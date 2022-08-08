@@ -122,3 +122,71 @@ let speed = 2
 let armor = 20
 ```
 Single line comments are best for one or two line explanations. Multi-line comments are best when you have a larger comment so that you don't need to type `//` over and over to start each line.
+
+## Variable Names
+Variable names can't have spaces, they're continuous strings of characters.
+
+In JavaScript you should use `"camelCase"` when creating variable names. Camel case is where the beginning of each new word except the first is capitalized so that it is easier to read:
+
+`thisIsCamelCase`
+
+`someMoreCamelCaseHere`
+
+### Casing Examples
+No casing:
+```js
+let somevariablehere = 10
+```
+
+Camel Case:
+```js
+let someVariableHere = 10
+```
+
+Snake Case:
+```js
+let some_variable_here = 10
+```
+
+### Answer the following question?
+Which is valid camel case?
+* myVariable
+* MYVARIABLE
+* my_variable
+
+
+## Basic Variable Types
+In JavaScript there are several basic data types.
+
+### Number Type
+You're already familiar with the `Number` type. Numbers aren't surrounded by quotes when created, but they can have decimals and negative signs.
+
+```js
+let x = 50
+
+let x = 50.20
+
+let x = -50
+```
+
+### String Type
+"Strings" are raw text in coding speak. They are called "strings" because they are a list of characters strung together. Strings are declared in JavaScript by using single quotes, double quotes, or backticks:
+```js
+let nameWithSingleQuotes = 'Master'
+
+let nameWithDoubleQuotes = "Master"
+
+let nameWithBackticks = `Master`
+```
+
+### Boolean Type
+A "Boolean" is a type that can only have one of two values: `true` or `false`. As you may have heard computers really only use 1's and 0's. These 1's and 0's are just `Boolean` values.
+
+```js
+0 = false
+1 = true
+```
+
+```js
+let myBool = true
+```
