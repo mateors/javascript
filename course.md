@@ -323,3 +323,21 @@ console.log(playerOneWins)
 
 // prints "true" when player one is winning, otherwise prints "false"
 ```
+
+## Changing In Place
+It's fairly common to want to change the value of a variable based on its current value.
+
+```js
+let playerScore = 4
+playerScore = playerScore + 1
+// playerScore now equals 5
+```
+```js
+let playerScore = 4
+playerScore = playerScore - 1
+// playerScore now equals 3
+```
+
+Don't let the fact that the expression `playerScore = playerScore - 1` is not a valid mathematical expression be confusing. It doesn't matter, it is valid code. It's valid because the way the expression should be read in english is:
+
+`Assign to playerScore the old value of playerScore minus 1.`
