@@ -229,3 +229,18 @@ let speedDescription = "five"
 Strongly typed languages like Go (which you'll learn in a later course) are strongly-typed instead of dynamically-typed. In a strongly-typed language, if you try to assign a value to a variable of the wrong type, an error would crash the program.
 
 If JavaScript were strongly-typed, the first example from before would crash on the second line, `speed = "five"`. The computer would give an error along the lines of `you can't assign a string value ("five") to a number variable (speed)`
+
+
+## Math With Strings
+Most math operators we went over earlier don't work with strings, but the exception is the `+` addition operator. When working with strings the `+` operator performs a "concatenation".
+
+"Concatenation" is a fancy word that means the joining of two strings.
+```js
+let firstName = "Lane "
+let lastName = "Wagner"
+let fullName = firstName + lastName
+```
+
+`fullName` now holds the value "Lane Wagner".
+
+Notice the extra space at the end of `"Lane "` in the `firstName` variable. That extra space is there to separate the words in the final result: `"Lane Wagner"`.
