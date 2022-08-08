@@ -244,3 +244,16 @@ let fullName = firstName + lastName
 `fullName` now holds the value "Lane Wagner".
 
 Notice the extra space at the end of `"Lane "` in the `firstName` variable. That extra space is there to separate the words in the final result: `"Lane Wagner"`.
+
+## Multi Variable Declaration
+We can save space when creating many new variables by declaring them on the same line:
+
+```js
+let stdName = "Tareq", stdAge = 25, stdHeight = 150
+```
+
+> Any number of variables can be declared on the same line.
+
+Variables declared on the same line should be related to one another in some way so that the code remains easy to understand
+
+We call code that's easy to understand "clean code"
