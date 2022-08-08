@@ -190,3 +190,19 @@ A "Boolean" is a type that can only have one of two values: `true` or `false`. A
 ```js
 let myBool = true
 ```
+
+## Undefined Variables
+Not all variables have a value. We can declare an empty variable:
+
+```js
+let empty
+```
+The value of `empty` in this instance is `undefined` until we use the assignment operator, `=`, to give it a value.
+
+### Undefined is NOT a specific string
+Note that the `undefined` type is not the same as a string with a value of "undefined":
+
+```js
+let myUndefinedVar // this is an undefined variable
+let myDefinedVar = "undefined" // this is a defined string
+```
