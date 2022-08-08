@@ -55,7 +55,8 @@ Code can have many different problems that prevent it from working as intended.
 ### What happens if you try to run code with invalid syntax?
 You will be provided a syntax error and the code would not execute.
 
-## Variables
+
+## Chapter-2 Variables
 Variables are how we store data in our program.
 
 A variable is a name that we define that will point to some data. For example, I could define a new variable called myHeight and set its value to 140. I could also define a variable called myName and set it equal to "Mostain Billah".
@@ -257,3 +258,40 @@ let stdName = "Tareq", stdAge = 25, stdHeight = 150
 Variables declared on the same line should be related to one another in some way so that the code remains easy to understand
 
 We call code that's easy to understand "clean code"
+
+## Chapter-3 Comparisons
+When coding it's necessary to be able to compare two values. `Boolean logic` is the name for these kinds of comparison operations that always result in `true` or `false`.
+
+The operators:
+
+* < "less than"
+* > "greater than"
+* <= "less than or equal to"
+* >= "greater than or equal to"
+* == "equal value"
+* === "equal type and equal value"
+* != "not equal value"
+* !== "not equal type or not equal value"
+
+For example:
+```js
+5 < 6 // evaluates to true
+5 > 6 // evaluates to false
+5 >= 6 // evaluates to false
+5 <= 6 // evaluates to true
+5 == 6 // evaluates to false
+5 === 6 // evaluates to false
+5 != 6 // evaluates to true
+5 !== 6 // evaluates to true
+```
+
+### Note on equality
+Triple equals `===` and `!==` are used more often than `==` and `!=` because it's more common that developers want to ensure that two values are the same type AND the same value, rather than just an equivalent value.
+
+For example:
+```js
+let playHealthString = "100"
+let playHealthNumber = 100
+playHealthString == playHealthNumber // true
+playHealthString === playHealthNumber // false
+```
