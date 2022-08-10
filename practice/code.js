@@ -11,11 +11,10 @@
 // }
 // console.log(`${remainder}-${difference}-${finalGrade}`);
 
-let grades = [10, 73, 50, 67];
-
-for (const grd of grades) {
-    console.log(grd);
-}
+// let grades = [10, 73, 50, 67];
+// for (const grd of grades) {
+//     console.log(grd);
+// }
 
 // grades.forEach(element => {
 //     console.log(element);
@@ -38,3 +37,13 @@ function possibleChanges(usernames) {
     }
     return ans;
 }
+
+
+console.log(typeof undefined);//“undefined”
+console.log(typeof null);
+
+console.log(undefined + 1); // NaN
+console.log(null + 1); // 1
+
+console.log(!!undefined); //false
+console.log(!!null); //false
