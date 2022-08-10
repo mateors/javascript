@@ -80,6 +80,15 @@ As you can see, when the equality operator is used it compares only the values. 
 
 But when we use the strict equality operator (===) which checks both type and value, since undefined and null are of different types (from the typeof Operator section), the strict equality operator returns false.
 
+## Exercise 4
+```js
+let greeting = "Hello my name is";
+let myname = "Mostain";
+let str = "As I have"
+let apples = 10;
+let end= "apples";
+console.log(greeting, myname, str,apples, end);
+```
 
 ```js
 let arr=[];

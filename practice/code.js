@@ -47,3 +47,10 @@ console.log(null + 1); // 1
 
 console.log(!!undefined); //false
 console.log(!!null); //false
+
+let greeting = "Hello my name is";
+let myname = "Mostain";
+let str = "As I have"
+let apples = 10;
+let end= "apples";
+console.log(greeting, myname, str,apples, end);
