@@ -1,5 +1,8 @@
 # Microverse Practice Repo
 
+# Level-1 (JavaScript Basics 1)
+* [Presentation](https://docs.google.com/presentation/d/1NOZmvjmX7Cy97cH_JeZ3yuIaIKTEvV5nMuXRMrIcCDA/edit?usp=sharing)
+
 ## Exercise 1
 1. Created an replit account with the username of [https://replit.com/@mateors](mateors)
 2. Created am empty Node.js project. [Javascript](https://replit.com/@mateors/Javascript#index.js)
@@ -108,8 +111,66 @@ console.log(apples); //15
 //or
 apples +=5;
 console.log(apples); //15
+```
 
+## Exercise 6
+```js
+let greeting = "Hello my name is";
+let myname = "Mostain";
+let lastname = "Billah";
+let str = "As I have"
+let apples = 10;
+apples *= 5;
+let end= "apples";
+console.log(greeting, myname,lastname, str,apples, end);
+```
 
+## Final Assesment
+
+### Storing Values with the Assignment Operator
+In JavaScript, you can store a value in a variable with the assignment operator (=).
+```js
+myVariable = 5;
+```
+[This assigns the Number value 5 to myVariable.](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/storing-values-with-the-assignment-operator)
+
+If there are any calculations to the right of the = operator, those are performed before the value is assigned to the variable on the left of the operator.
+
+```js
+var myVar;
+myVar = 5;
+```
+First, this code creates a variable named myVar. Then, the code assigns 5 to myVar. Now, if myVar appears again in the code, the program will treat it as if it is 5.
+
+### [Assigning the Value of One Variable to Another](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/assigning-the-value-of-one-variable-to-another)
+After a value is assigned to a variable using the assignment operator, you can assign the value of that variable to another variable using the assignment operator.
+```js
+var myVar;
+myVar = 5;
+var myNum;
+myNum = myVar;
+```
+### Above code explanation
+* The above declares a myVar variable with no value 
+* then assigns it the value 5. 
+* Next, a variable named myNum is declared with no value. 
+* Then, the contents of myVar (which is 5) is assigned to the variable myNum. 
+* Now, myNum also has the value of 5.
+
+### [Understanding Case Sensitivity in Variables](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-case-sensitivity-in-variables)
+
+In JavaScript all variables and function names are case sensitive. This means that capitalization matters.
+
+`MYVAR` is not the same as `MyVar` nor `myvar`. It is possible to have multiple distinct variables with the same name but different casing. It is strongly recommended that for the sake of clarity, you do not use this language feature.
+
+#### Best Practice
+Write variable names in JavaScript in camelCase. In camelCase, multi-word variable names have the first word in lowercase and the first letter of each subsequent word is capitalized.
+
+#### Examples:
+```js
+var someVariable;
+var anotherVariableName;
+var thisVariableNameIsSoLong;
 ```
 
 ```js

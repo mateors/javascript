@@ -50,7 +50,9 @@ console.log(!!null); //false
 
 let greeting = "Hello my name is";
 let myname = "Mostain";
+let lastname = "Billah";
 let str = "As I have"
 let apples = 10;
+apples *= 5;
 let end= "apples";
-console.log(greeting, myname, str,apples, end);
+console.log(greeting, myname,lastname, str,apples, end);
