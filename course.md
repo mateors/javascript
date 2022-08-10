@@ -397,3 +397,7 @@ First the `if` statement is evaluated. If it is `true` then the if statement's b
 If the first `if` is false then the next `else if` is evaluated. Likewise if it is true then its body is executed and the rest are ignored.
 
 If none of the `if` statements evaluate to `true` then the final `else` statement will be the only body executed.
+
+### Here are some basic rules with if/else blocks.
+* You can't have an else if or an else without an if
+* You can have an else without an else if
