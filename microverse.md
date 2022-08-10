@@ -90,6 +90,28 @@ let end= "apples";
 console.log(greeting, myname, str,apples, end);
 ```
 
+## Modifying variables
+```js
+//String type concatenation
+let name = "Mostain";
+name = name + " Billah";
+console.log(name); //Mostain Billah
+//or
+name += " Billah";
+console.log(name); //Mostain Billah
+
+//Numeric type concatenation
+let apples = 10;
+apples = apples +5;
+console.log(apples); //15
+
+//or
+apples +=5;
+console.log(apples); //15
+
+
+```
+
 ```js
 let arr=[];
 
