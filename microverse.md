@@ -183,3 +183,68 @@ for (let i=3; i<=12; i++ ){
 ```
 
 # [Level-2](https://docs.google.com/presentation/d/1aagkWAfDdFYWZul_WnhdlXicHHD3WNXZUZb13UyGijo/edit?usp=sharing)
+
+## How to use bubbles to do teamwork
+We have created a whatsapp group of 7 members, the purpose of this group is to study and practice code together in a collaborative way.
+
+### mob programming in bubbles
+One become a driver and the rest are navigators from the newly form bubbles/team
+driver will  share his/her screen and code with the help of navigators.
+
+## Why teamwork is so important?
+* Most of your time at Microverse will be spent doing teamwork with others, and doing teamwork in this level will prepare you for that.
+* Teamwork will give you the opportunity to improve your coding communication skills.
+* Being able to communicate your thought process while coding is essential at real-world tech job interviews.
+
+> so teamwork helps to improve our coding communication skills as well as thinking process.
+
+To get recommendation from the microverse representitive we need to form a team and work together and participate all the event specially hackathon on wednesday at 8pm. Remember only participant will get recommendation to join microverse program.
+
+
+## Basic aritmetics in JavaScript
+
+### Exercise 1
+```js
+let A= 4 + 7;
+let B = 5 * 9;
+let C= B/A;
+console.log(C); //4.090909090909091
+```
+
+### Why if-then-else statements matter
+Like real world in programming we need to take decisions and `if`, `else if`, `else` this are the keywords help us to take decision or select a specific block of code in our program and execute.
+
+### Switch case syntax
+```js
+
+
+let steps=0;
+
+//if else
+if (steps==0){
+  console.log("You have not started yet!, you are at steps 0");
+}else if(steps==1){
+  console.log("You are at steps 1");
+}else{
+  console.log("You need help to get started?");
+}
+
+//same but using switch case
+switch(steps){
+  case 0:
+    console.log("You have not started yet!, you are at steps 0");
+    break;
+    
+  case 1:
+    console.log("You are at steps 1");
+    break;
+
+  default:
+    console.log("You need help to get started?");
+}
+//above line of code will output
+//You have not started yet!, you are at steps 0
+```
+* [Which one to pick? if-else or switch-case?](https://dasha.ai/en-us/blog/javascript-if-else-or-switch-case)
+
+
