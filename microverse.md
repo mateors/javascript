@@ -528,7 +528,7 @@ After completeing every level we must submit our progress report using the gathe
 [Progress report form](https://airtable.com/shrcivQt85T4vhc3V)
 
 
-## Level-3
+## [Level-3](https://docs.google.com/presentation/d/15-Db3kK2SM55dxFxJWoTP8MiRI40rVDTUVIumV4tfp4/edit?usp=sharing)
 
 ### Tweaking `for` loops
 
