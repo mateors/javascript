@@ -248,3 +248,53 @@ switch(steps){
 * [Which one to pick? if-else or switch-case?](https://dasha.ai/en-us/blog/javascript-if-else-or-switch-case)
 
 
+## Excersise 2
+```js 
+let X = 32;
+
+if (X==9){
+  console.log("True");
+}else{
+  console.log("False");
+}
+
+let Y = "Green";
+if (Y=="Blue"){
+  console.log("Blue detected!");
+
+} else if(Y=="Green"){
+   console.log("Green detected!");
+
+}else{
+  console.log("No green or blue detected!");
+}
+```
+
+## Comparison Operators
+* `==`	equal to
+* `===`	equal value and equal type
+* `!=`	not equal
+* `!==`	not equal value or not equal type
+* `>`	greater than
+* `<`	less than
+* `>=`	greater than or equal to
+* `<=`	less than or equal to
+
+```js
+if (age < 18) text = "Too young to buy alcohol";
+```
+
+## Logical Operators
+* `&&` and -> (x < 10 && y > 1) is true
+* `||` or
+* `!`	 not
+
+## Conditional (Ternary) Operator
+JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.
+
+### Syntax
+> variablename = (condition) ? value1:value2 
+```js
+let voteable = (age < 18) ? "Too young":"Old enough";
+console.log(voteable);
+```
