@@ -1,6 +1,6 @@
 # Microverse Practice Repo
 
-# Level-1 (JavaScript Basics 1)
+# [Level-1 (JavaScript Basics 1)](https://docs.google.com/presentation/d/1NOZmvjmX7Cy97cH_JeZ3yuIaIKTEvV5nMuXRMrIcCDA/edit?usp=sharing)
 * [Presentation](https://docs.google.com/presentation/d/1NOZmvjmX7Cy97cH_JeZ3yuIaIKTEvV5nMuXRMrIcCDA/edit?usp=sharing)
 
 ## Exercise 1
