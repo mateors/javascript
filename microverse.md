@@ -344,14 +344,175 @@ console.log(numbers);
 ```
 
 ## Combining arrays, loops and if-then-else
-### Exercise 7
+### Exercise 7 (Google Slide 23)
 ```js
 let numbers = [1,2,3,4,5,6,7,8,9,10];
 let size=numbers.length;
 
 for(let i=0; i<size; i++){
-  if(i>4){
+  //if(i>4){
     console.log(i);
+  //}
+}
+```
+
+## JavaScript coding challenges
+Google slide 26 & 27
+
+* [Understanding Boolean Values](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-boolean-values)
+* [Use Conditional Logic with If Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-conditional-logic-with-if-statements)
+```js
+function trueOrFalse(wasThatTrue) {
+    // Only change code below this line
+  if(wasThatTrue){
+    return "Yes, that was true";
+  }else{
+    return "No, that was false";
   }
+    // Only change code above this line
+}
+```
+* [Comparison with the Equality Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-equality-operator)
+
+In order for JavaScript to compare two different data types (for example, `numbers` and `strings`), it must convert one type to another. This is known as Type Coercion. Once it does, however, it can compare terms as follows:
+
+```js
+1   ==  1  // true
+1   ==  2  // false
+1   == '1' // true
+"3" ==  3  // true
+```
+```js
+// Setup
+function testEqual(val) {
+  if (val==12) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testEqual(10);
+```
+* [Comparison with the Inequality Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-inequality-operator)
+* [Comparison with the Greater Than Or Equal To Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-greater-than-or-equal-to-operator)
+```js
+function testGreaterOrEqual(val) {
+
+  if (val>=20) {  // Change this line
+    return "20 or Over";
+  }
+  if (val>=10) {  // Change this line
+    return "10 or Over";
+  }
+  return "Less than 10";
+}
+
+testGreaterOrEqual(10);
+```
+*[Store Multiple Values in one Variable using JavaScript Arrays](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/store-multiple-values-in-one-variable-using-javascript-arrays)
+```js
+// Only change code below this line
+const myArray = ["Mostain", 38];
+```
+* [Access Array Data with Indexes](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/access-array-data-with-indexes)
+```js
+const array = [50, 60, 70];
+console.log(array[0]);
+const data = array[1];
+
+//Create a variable called myData and set it to equal the first value of myArray using bracket notation.
+const myArray = [50, 60, 70];
+let myData = myArray[0];
+```
+
+* [Modify Array Data With Indexes](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/modify-array-data-with-indexes)
+Unlike strings, the entries of arrays are mutable and can be changed freely, even if the array was declared with const.
+### Example
+```js
+const ourArray = [50, 40, 30];
+ourArray[0] = 15;
+ourArray now has the value [15, 40, 30].
+
+// Setup
+const myArray = [18, 64, 99];
+
+// Only change code below this line
+myArray[0]=45;
+```
+* [Iterate with JavaScript While Loops](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/iterate-with-javascript-while-loops)
+You can run the same code multiple times by using a loop.
+
+The first type of loop we will learn is called a while loop because it runs while a specified condition is true and stops once that condition is no longer true.
+
+```js
+const ourArray = [];
+let i = 0;
+
+while (i < 5) {
+  ourArray.push(i);
+  i++;
+}
+
+//Add the numbers 5 through 0 (inclusive) in descending order to myArray using a while loop.
+// Setup
+const myArray = [];
+// Only change code below this line
+let i=5;
+while(i>=0){
+  myArray.push(i);
+  i--;
+}
+console.log(myArray);
+```
+* [Iterate with JavaScript For Loops](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/iterate-with-javascript-for-loops)
+You can run the same code multiple times by using a loop.
+
+The most common type of JavaScript loop is called a for loop because it runs for a specific number of times.
+
+For loops are declared with three optional expressions separated by semicolons:
+
+`for (a; b; c)`, where `a` is the initialization statement, `b` is the condition statement, and `c` is the final expression.
+```js
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for(let i=1; i<=5; i++){
+  myArray.push(i);
+}
+```
+* [Count Backwards With a For Loop](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/count-backwards-with-a-for-loop)
+A for loop can also count backwards, so long as we can define the right conditions.
+
+In order to decrement by two each iteration, we'll need to change our initialization, condition, and final expression.
+
+We'll start at `i = 10` and loop while `i > 0`. We'll decrement `i` by 2 each loop with `i -= 2`.
+```js
+const ourArray = [];
+
+for (let i = 10; i > 0; i -= 2) {
+  ourArray.push(i);
+}
+
+//Push the odd numbers from 9 through 1 to myArray using a for loop.
+// Setup
+const myArray = [];
+// Only change code below this line
+for(let i=9; i>0; i-=2){
+  myArray.push(i);
+}
+```
+* [Iterate Through an Array with a For Loop](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/iterate-through-an-array-with-a-for-loop)
+```js
+//Declare and initialize a variable total to 0. Use a for loop to add the value of each element of the myArr array to total.
+
+// Setup
+const myArr = [2, 3, 4, 5, 6];
+
+// Only change code below this line
+let total=0;
+for(let i=0; i<myArr.length; i++){
+  total+=myArr[i];
+  //console.log(total);
 }
 ```
