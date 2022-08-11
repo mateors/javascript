@@ -526,3 +526,55 @@ After completeing every level we must submit our progress report using the gathe
 ![progress](./screens/progress_report.png)
 
 [Progress report form](https://airtable.com/shrcivQt85T4vhc3V)
+
+## Level-3
+
+### Tweaking `for` loops
+
+### Exercise 1
+```js
+
+for(let i=102; i>=27; i-=3){
+  console.log(i);
+}
+
+```
+
+### Array operations
+```js
+let arr = ["Apple", "Banana", 10, 20, 50];
+
+//push to arr = add to the ending
+arr.push("Orange");
+console.log(arr);
+
+//pop from arr = remove from the ending
+let popped=arr.pop();
+console.log(popped);
+console.log(arr);
+
+//shifting = remove from the beginning
+let shifted=arr.shift();
+console.log(shifted, arr);
+
+//add from the beginning
+arr.unshift(50);
+console.log(arr);
+
+//remove multiple element from array
+let spliced=arr.splice(1,2);
+console.log(spliced, arr);
+
+//copy section of an array
+let copys=arr.slice(0,2);
+console.log(copys);
+```
+### Exercise 2
+```js
+let arr = [];
+
+for(let i=3; i<=12; i++){
+  arr.push(i);
+}
+console.log(arr);
+```
