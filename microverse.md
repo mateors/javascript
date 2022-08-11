@@ -527,6 +527,7 @@ After completeing every level we must submit our progress report using the gathe
 
 [Progress report form](https://airtable.com/shrcivQt85T4vhc3V)
 
+
 ## Level-3
 
 ### Tweaking `for` loops
@@ -577,4 +578,191 @@ for(let i=3; i<=12; i++){
   arr.push(i);
 }
 console.log(arr);
+```
+
+## Basic logical operators
+### Exercise 3
+```js
+let arr =[3, 10, 9, 5, 2, 11, 7, 15, 12, 4, 1, 13, 6, 14, 8];
+for(let i=0; i<arr.length; i++){
+  if (arr[i] >=3 && arr[i] <=7){
+    console.log(arr[i]);
+  }
+}
+//--------
+function testLogicalAnd(val) {
+  // Only change code below this line
+  if (val >=25 && val <=50) {
+      return "Yes";
+  }
+  // Only change code above this line
+  return "No";
+}
+testLogicalAnd(10);
+
+function testLogicalOr(val) {
+  // Only change code below this line
+  if (val<10 || val>20) {
+    return "Outside";
+  }
+  // Only change code above this line
+  return "Inside";
+}
+testLogicalOr(15);
+```
+
+## Exercise 4
+```js
+let arr =[3, 10, 9, 5, 2, 11, 7, 15, 12, 4, 1, 13, 6, 14, 8];
+for(let i=0; i<arr.length; i++){
+  if (arr[i]<3 || arr[i]>7){
+    console.log(arr[i]);
+  }
+}
+```
+## String truncation
+### Exercise 5
+```js
+let name="Microverse";
+console.log(name.substring(0,5));
+console.log(name.substring(0,5));
+```
+
+## Exercise 6
+```js
+let arr= [1,2,3,4,5,6,7,8,9,10,13];
+let number=13;
+
+for(let x of arr){
+  if(x==number){
+    console.log("Found it!");
+  }else{
+    console.log("Not found");
+  }
+}
+```
+
+## Exercise 7
+```js
+let numbers= [1,2,3,4,5,6,7,8,9,10];
+let arr= [];
+
+for(let i=0; i<numbers.length; i++){
+ if(numbers[i]>=4 && numbers[i]<=9){
+  arr.push(numbers[i]);
+ }
+}
+console.log(arr);
+
+```
+
+### Exercise 8
+```js
+let arr = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ];
+let size=arr.length;
+
+for(let i=size-1; i>=0; i--){
+
+  //console.log(arr[i]);
+  let sa=arr[i];
+  for(let j=sa.length-1; j>=0; j--){
+    console.log(sa[j]);
+  }
+}
+```
+
+
+### Exercise 9
+```js
+let bigarr= [];
+let extc=9;
+
+for(let i=0; i<3; i++){
+
+  let little=[];
+  for(let j=0; j<3; j++){
+    little.push(extc);
+    extc--;
+  }
+ bigarr.push(little);
+}
+console.log(bigarr);
+```
+
+## Function arguments
+* less code or no code repetition
+* arguments
+
+### Exercise 10
+```js
+function multiplier(){
+  let a=5;
+  let b=6;
+  console.log(a*b);
+}
+
+function greet(name){
+  console.log(`Hello ${name}`);
+}
+```
+> How to use return to produce the output of a function
+
+### Exercise 11
+```js
+
+function myFunc(arr){
+  let output = [];
+  for(let x of arr){
+     output.push(x*5);
+  }
+  return output;
+}
+
+let out=myFunc([1,5,10]);
+console.log(out);
+```
+
+
+* [Reversing and translating arrays with functions](https://www.youtube.com/watch?v=UAI7jTJg3OM&t=1s)
+
+### Exercise 12
+```js
+
+function reverse(arr){
+  
+ let output = [];
+ for (let i= arr.length-1; i>=0; i--){
+   output.push(arr[i])
+ }
+ return output;
+}
+console.log(reverse([1,2,3]));
+
+function revTran(arr){
+  let output=[];
+  for(let i=arr.length-1; i>=0; i--){
+    output.push(arr[i])
+  }
+
+  let result=[];
+  for(let i=0; i<output.length; i++){
+   
+    if(output[i]==1){
+       result.push("one");
+    }
+    if(output[i]==2){
+       result.push("two");
+    }
+    if(output[i]==3){
+       result.push("three");
+    }
+    if(output[i]==4){
+       result.push("four");
+    }
+  }
+  return result;
+}
+//console.log(revTran([1,2,3,4])); 
+//console.log(revTran([4,1,1,2])); //
+console.log(revTran([1,2,1,2])); //
 ```
