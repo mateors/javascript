@@ -298,3 +298,42 @@ JavaScript also contains a conditional operator that assigns a value to a variab
 let voteable = (age < 18) ? "Too young":"Old enough";
 console.log(voteable);
 ```
+
+### Make sure that you understand the difference between:
+* `==` and `===`
+* `!=` and `!==`
+
+> Double equals (`==`) is a comparison operator, which transforms the operands having the same type before comparison.
+
+> `===` (Triple equals) is a strict equality comparison operator in JavaScript
+
+## Exercise 3
+```js
+let n = 71; //50
+if ( n > 45 ){
+   if ( n < 65 ){
+    console.log(n);
+   }
+}
+```
+
+## While loop
+### Exercise 4
+```js
+let i = 2;
+while(i<=9){
+ console.log(i);
+ i++;
+}
+```
+
+## For loop
+### Exercise 5
+```js
+for(let i=7; i<13; i++){
+  console.log(i);
+}
+```
+
+## Data Structure - Array
+
