@@ -516,3 +516,13 @@ for(let i=0; i<myArr.length; i++){
   //console.log(total);
 }
 ```
+
+## Recommendation for doing teamwork
+We did some teamwork in this level 2 so we are a valid candidate for asking the recommendation, please submit the recommendation form https://airtable.com/shrDs5hEGXsGTh8OT
+
+
+## Don't forget to submit progress report
+After completeing every level we must submit our progress report using the gather board.
+![progress](./screens/progress_report.png)
+
+[Progress report form](https://airtable.com/shrcivQt85T4vhc3V)
