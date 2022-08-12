@@ -1076,3 +1076,41 @@ function destroyer(arr){
 }
 console.log(destroyer([1,6,5,7,5,7], 5,7));//[ 1, 6 ]
 ```
+
+### [Pig Latin](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/pig-latin)
+I used to solve using [Slide 37 hints 2](https://www.youtube.com/watch?v=D1VzsCiA4mI)
+
+Pig Latin is a way of altering English Words. The rules are as follows:
+
+- If a word begins with a consonant, take the first consonant or consonant cluster, move it to the end of the word, and add `ay` to it.
+
+- If a word begins with a vowel, just add `way` at the end.
+
+```js
+function translatePigLatin(str) {
+
+  let fchar=str[0];
+  let vowels="aeiou";
+  let output="";
+
+  if (vowels.includes(fchar)){
+      output=str+"way";
+
+  }else{
+
+      let i=0;
+      while(vowels.includes(str[i])==false){
+        //console.log(str[i]);
+        i++;
+      }
+
+      let prefix=str.substring(0,i);
+      let rest=str.substring(i);
+      output=`${rest}${prefix}ay`;
+  }
+  return output;
+}
+console.log(translatePigLatin("schwartz"));
+console.log(translatePigLatin("algorithm"));
+console.log(translatePigLatin("california"));
+```
