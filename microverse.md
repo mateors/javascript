@@ -918,6 +918,7 @@ Return the lowest index at which a value (second argument) should be inserted in
 For example, `getIndexToIns([1,2,3,4], 1.5)` should return 1 because it is greater than `1` (index 0), but less than `2` (index 1).
 
 ```js
+//Time Complexity: O(n)
 function getIndexToIns(arr, num) {
   
   let index=0;
@@ -952,6 +953,7 @@ console.log(getIndexToIns([2, 5, 10], 15));//3
 console.log(getIndexToIns([], 1));//0
 
 //the easy method, using hint from slide 21
+//Time Complexity: O(n)
 function getIndexToIns(arr, num) {
   let index=0;
   for(let i=0; i<arr.length; i++){
@@ -970,4 +972,77 @@ console.log(getIndexToIns([5, 3, 20, 3], 5));//2
 console.log(getIndexToIns([2, 20, 10], 19)); //2
 console.log(getIndexToIns([2, 5, 10], 15));//3
 console.log(getIndexToIns([], 1));//0
+```
+
+### [Chunky monkey](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/chunky-monkey)
+slide 23 challenge
+
+```js
+//Time Complexity: O(n)
+function chunkArrayInGroups(arr, size) {
+  let aSize=arr.length;
+  let twoDim=[];
+  let loopEnd=Math.ceil(aSize/size);
+  let start=0;
+  //console.log(loopEnd);
+  for(let i=0; i<loopEnd; i++){
+    twoDim.push(arr.slice(start,start+size));
+    start+=size
+  }
+  return twoDim;
+}
+
+console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));//[ [ 'a', 'b' ], [ 'c', 'd' ] ]
+console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8], 2)); //[ [ 0, 1 ], [ 2, 3 ], [ 4, 5 ], [ 6, 7 ], [ 8 ] ]
+
+
+function chunkArrayInGroups(arr, size) {
+
+  let output = []; 
+  let subarr=[];
+  let subc=0;
+  
+  //console.log(loopEnd);
+  for(let i=0; i<arr.length; i++){
+    
+    if(subc===size){
+      subc=0;
+      output.push(subarr);
+      subarr=[];
+    }
+    
+    subarr.push(arr[i]);
+    subc++;
+  }
+  output.push(subarr);
+  //console.log(subarr);
+  return output;
+}
+```
+
+### [Sum All Numbers in a Range](https://docs.google.com/presentation/d/1qX08h9muuE-iFb0TlkhbPrV4rmcBjnvpIQRuIQEdFAU/edit?usp=sharing)
+Slide 27, We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them. The lowest number will not always come first.
+
+For example, `sumAll([4,1])` should return `10` because sum of all the numbers between 1 and 4 (both inclusive) is `10`.
+
+```js
+function sumAll(arr) {
+
+  let result=0;
+  let start=arr[0];
+  let end=arr[1];
+
+  if(end<start){
+    start=arr[1];
+    end=arr[0];
+  }
+  
+  for(let i=start; i<=end; i++){
+    //console.log(i);
+    result+=i;
+  }
+  return result;
+}
+let res=sumAll([10, 5]);
+console.log(res);
 ```
