@@ -868,3 +868,18 @@ function recursiveFactorial(num){
 }
 
 ```
+
+
+### [Truncate a String](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/truncate-a-string)
+Slide 16, Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a `...` ending.
+
+```js
+function truncateString(str, num) {
+  let size=str.length;
+  str=str.substring(0,num);
+  if (size>num){
+    str=str+"...";
+  }
+  return str;
+}
+```
