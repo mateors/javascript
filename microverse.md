@@ -822,3 +822,49 @@ function reverseString(str){
   return reverse;
 }
 ```
+### [Factorialize a number](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/factorialize-a-number)
+Slide 12, Return the factorial of the provided integer.
+Factorials are often represented with the shorthand notation n!
+For example: `5! = 1 * 2 * 3 * 4 * 5 = 120`
+```js
+//Manual factorial calculation
+let x = 1;
+
+x *=2;
+
+x *=3;
+console.log(x); //3!=6
+
+x *=4;
+console.log(x); //4!=24
+
+x *=5;
+console.log(x); //5!=120
+
+x *=6;
+console.log(x); //6!=720
+
+//Now turn the above idea/concept into a function
+//Time Complexity: O(n)
+function factorialize(num) {
+  let result=1;
+  for(let i=2; i<=num; i++){
+   result *= i;
+   //console.log(result);
+  }
+  return result;
+}
+
+//Time Complexity: O(n)
+function recursiveFactorial(num){
+
+  //base case
+  if (num==1 || num==0){
+    return 1;
+  }
+  //recursive case
+  num=num*rfactor(num-1);
+  return num;
+}
+
+```
