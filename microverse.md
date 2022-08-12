@@ -883,3 +883,91 @@ function truncateString(str, num) {
   return str;
 }
 ```
+
+### [Where do I Belong](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/where-do-i-belong)
+
+* [How javascript array sorting works?](https://www.javascripttutorial.net/javascript-array-sort/)
+```js
+let arr = [5, 2, 10, 4, 3, 1];
+console.log(arr);
+arr.sort(function(a, b) {
+
+  if (a > b) { //first argument is greater than second
+    return 1; //positive
+  }
+  if (a < b) { //first argument is less than second
+    return -1; //negative
+  }
+  return 0; //a==b, both are equal so zero
+});
+console.log(arr);
+
+//10,2
+//10>2==true = 10-2=8 positive -> 1
+//10<2==false => 2-10=-8 negative -> -1
+//otherwise zero
+
+let nums=[3,5,20];
+console.log(nums.sort((a,b)=>a-b)); 
+```
+
+### [Where do i belong?](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/where-do-i-belong)
+Slide 20 \
+Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted. The returned value should be a number.
+
+For example, `getIndexToIns([1,2,3,4], 1.5)` should return 1 because it is greater than `1` (index 0), but less than `2` (index 1).
+
+```js
+function getIndexToIns(arr, num) {
+  
+  let index=0;
+  arr.sort((a,b)=>a-b);
+  for(let i=0; i<arr.length; i++){
+
+    let cn=arr[i];
+    let nn=arr[i+1];
+    
+    if(num == cn && num<nn){
+      index=i;
+      return index;
+      
+    } else if(num> cn && num<nn){
+      index=i+1;
+      return index; 
+      
+    }else{
+      index++;
+    }  
+  }
+  return index;
+}
+
+console.log(getIndexToIns([10,20,30,40,50], 35));//3
+console.log(getIndexToIns([10,20,30,40,50], 30));//2
+console.log(getIndexToIns([40,60], 50));//1
+console.log(getIndexToIns([3, 10,5], 3));//0
+console.log(getIndexToIns([5, 3, 20, 3], 5));//2
+console.log(getIndexToIns([2, 20, 10], 19)); //2
+console.log(getIndexToIns([2, 5, 10], 15));//3
+console.log(getIndexToIns([], 1));//0
+
+//the easy method, using hint from slide 21
+function getIndexToIns(arr, num) {
+  let index=0;
+  for(let i=0; i<arr.length; i++){
+    if(num>arr[i]){
+      index++;
+    }
+  }
+ return index;
+}
+
+console.log(getIndexToIns([10,20,30,40,50], 35));//3
+console.log(getIndexToIns([10,20,30,40,50], 30));//2
+console.log(getIndexToIns([40,60], 50));//1
+console.log(getIndexToIns([3, 10,5], 3));//0
+console.log(getIndexToIns([5, 3, 20, 3], 5));//2
+console.log(getIndexToIns([2, 20, 10], 19)); //2
+console.log(getIndexToIns([2, 5, 10], 15));//3
+console.log(getIndexToIns([], 1));//0
+```
