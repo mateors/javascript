@@ -779,3 +779,46 @@ function convertCtoF(celsius) {
 console.log(convertCtoF(30));
 ```
 
+### [Reverse a String](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/reverse-a-string)
+slide 8
+
+> How do i turn the string into an array?
+There are 4 Ways to Convert String to Character Array in JavaScript.
+```js
+const string = 'word';
+```
+1. string.split(''); `console.log(string.split(''));`
+2. [...string]; `console.log([...string]);`
+3. Array.from(string); `console.log(Array.from(string));`
+4. Object.assign([], string); `console.log(Object.assign([],string));`
+
+
+```js
+function reverseString(str){
+  let reverse="";
+  //read/access each letter from the str variable
+  for(let i=str.length-1; i>=0; i--){
+    //console.log(str[i]);
+    reverse+=str[i];
+  }
+  return reverse;
+}
+
+reverseString("hello");
+
+//Another way using .split() function
+function reverseString(str){
+  
+  let reverse="";
+  //let narr=str.split(""); //option 1
+  //let narr=[...str]; //option 2
+  //let narr=Array.from(str); //option 3
+  let narr=Object.assign([], str); //option 4
+
+  //reading each letter from the narr array
+  for(let i=narr.length-1; i>=0; i--){
+    reverse+=narr[i];
+  }
+  return reverse;
+}
+```
