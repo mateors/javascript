@@ -766,3 +766,16 @@ function revTran(arr){
 //console.log(revTran([4,1,1,2])); //
 console.log(revTran([1,2,1,2])); //
 ```
+
+## [Level-4](https://docs.google.com/presentation/d/1qX08h9muuE-iFb0TlkhbPrV4rmcBjnvpIQRuIQEdFAU/edit?usp=sharing)
+Slide 4, Convert Celsius to Fahrenheit 
+
+```js
+function convertCtoF(celsius) {
+  let fahrenheit;
+  fahrenheit=celsius*(9/5)+32;
+  return fahrenheit;
+} 
+console.log(convertCtoF(30));
+```
+
