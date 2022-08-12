@@ -1114,3 +1114,74 @@ console.log(translatePigLatin("schwartz"));
 console.log(translatePigLatin("algorithm"));
 console.log(translatePigLatin("california"));
 ```
+
+
+### [DNA Pairing](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/dna-pairing)
+Slide 39, freecodecamp problem description was not clear to me, I googled and found the following info to make it understand how DNA strand base pair forms.
+
+#### Pairs of DNA strands / dna strand base pairs
+> The four bases in DNA are adenine (A), cytosine (C), guanine (G), and thymine (T). These bases form specific pairs (A with T, and G with C).
+
+```js
+function pairElement(str) {
+
+  let output=[]; //2d array
+  let at="AT";
+  let cg="CG";
+  
+  for (let i = 0; i < str.length; i++) {
+    
+    let singlepair=str[i];
+    //console.log(singlepair);
+    let subarr=[]//1d array
+    if(at.includes(singlepair)){
+
+      if(singlepair=='A'){
+        subarr=['A','T'];
+      }else if(singlepair=='T'){
+        subarr=['T','A'];
+      }
+    }
+
+    if(cg.includes(singlepair)){
+      
+      if(singlepair=='C'){
+        subarr=['C','G'];
+      }else if(singlepair=='G'){
+        subarr=['G','C'];
+      }
+    }
+    output.push(subarr);
+  }
+  return output;
+}
+
+console.log(pairElement("GCG"));
+console.log(pairElement("ATCGA"));
+console.log(pairElement("TTGAG"));
+console.log(pairElement("CTCTA"));
+
+//Another easy of of implementation the same function
+function pairElement(str) {
+
+  let output=[]; //2d array
+
+    for (let i = 0; i < str.length; i++) {
+      
+      let singlepair=str[i];
+      if (singlepair=='A'){
+        output.push(['A','T']);
+        
+      }else if (singlepair=='T'){
+        output.push(['T','A']);
+        
+      }else if (singlepair=='C'){
+        output.push(['C','G']);
+        
+      }else {
+        output.push(['G','C']);
+      }
+  }
+  return output;
+}
+```
