@@ -1185,3 +1185,63 @@ function pairElement(str) {
   return output;
 }
 ```
+
+
+## Next Level
+* Level 5 - JavaScript Intermediate Challenges.
+* Level 6 - JavaScript Advance Challenges
+* Level 7 - Intro to web development
+* Level 8 - HTML
+* Level 9 - CSS 1
+* Level 10 - CSS 2
+* Level 11 - Git Experience
+* Level 12 - HTML/CSS Project
+
+
+## Level 5 practice
+
+#### Challenge #11
+[Convert HTML Entities](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/convert-html-entities)
+
+```js
+// let str="Dolce & Gabbana";
+// console.log(str.replace(/&/gi, "&amp;"));
+
+// let str="Hamburgers < Pizza < Tacos";
+// console.log(str.replace(/</gi, "&lt;"));
+
+// let str="Sixty > twelve";
+// console.log(str.replace(/>/gi, "&gt;"));
+
+// let str=`Stuff in "quotation marks"`;
+// console.log(str.replace(/"/gi, "&guote;"));
+
+// let str="Schindler's List"
+// console.log(str.replace(/'/gi, "&apos;"));
+
+
+function convertHTML(str) {
+  
+    if (str.includes("&")==true){
+      str=str.replace(/&/gi, "&amp;");
+    }
+
+    if (str.includes("<")==true){
+      str=str.replace(/</gi, "&lt;");
+    }
+
+    if (str.includes(">")==true){
+      str =str.replace(/>/gi, "&gt;");
+    }
+
+    if (str.includes(`"`)==true){
+      str=str.replace(/"/gi, "&quot;");
+    }
+
+    if (str.includes(`'`)==true){
+      str=str.replace(/'/gi, "&apos;");
+    }
+  return str;
+}
+
+```
