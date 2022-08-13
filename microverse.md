@@ -1198,9 +1198,21 @@ function pairElement(str) {
 * Level 12 - HTML/CSS Project
 
 
-## Level 5 practice
+# Level 5
+## JavaScript Intermediate Challenges
 
-#### Challenge #11
+* Challenge #11: Convert HTML Entities (freeCodeCamp) 
+* Challenge #12: Sum All Primes (freeCodeCamp) 
+* Challenge #13: A Very Big Sum (HackerRank) 
+* Challenge #14: Plus Minus (HackerRank) 
+* Challenge #15: Staircase (HackerRank) 
+* Challenge #16: Birthday Cake Candles (HackerRank) 
+* Challenge #17: Breaking the Records (HackerRank) 
+* Challenge #18: Bon Appétit (HackerRank) 
+* Challenge #19: Cats and a Mouse (HackerRank) 
+* Challenge #20: The Hurdle Race x(HackerRank) 
+
+### Challenge #11
 [Convert HTML Entities](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/convert-html-entities)
 
 ```js
@@ -1243,5 +1255,15 @@ function convertHTML(str) {
     }
   return str;
 }
+
+```
+
+
+### Challenge #12
+* [Sum All Primes](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/sum-all-primes)
+
+A prime number is a whole number greater than 1 with exactly two divisors: 1 and itself. For example, 2 is a prime number because it is only divisible by 1 and 2. In contrast, 4 is not prime since it is divisible by 1, 2 and 4.
+
+```js
 
 ```
