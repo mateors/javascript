@@ -1265,6 +1265,7 @@ You may assume that each input would have exactly one solution, and you may not 
 You can return the answer in any order.
 
 ```js
+ //Time Complexity: O(n^2)
  function twoSum(nums, target) {
    
    let output=[];
@@ -1281,17 +1282,10 @@ You can return the answer in any order.
    }
 
    for(let i=0; i<nums.length; i++){
-     
-     //console.log('*',i, nums[i]);
-     // let start=0;
-     // if(i !== nums.length-1){
-     //   start=i+1;
-     // }
-     
+
      for(let j=0; j<nums.length; j++){
 
        if(nums[i]!==nums[j]){
-
          let result=nums[i]+nums[j];
          if(result==target){
            output.push(i,j);
