@@ -1351,6 +1351,24 @@ function isPrime(number){
   }
   return true;
 }
+function getPrimes(number){
+  
+  let prime=[];
+  for(let i=2; i<number; i++){
+    
+    let isPrime=true;
+    for(let j=2; j<i/2; j++){
+      if (i%j==0){
+        isPrime=false;
+      }
+      console.log(i,j,i%j);
+    }
+    if(isPrime){
+      prime.push(i);
+    }
+  }
+  return prime;
+}
 
 //Time Complexity: O(n^2)
 //https://dev.to/atebarhaider/sieve-of-eratosthenes-algorithm-4ol
@@ -1382,3 +1400,55 @@ function primeSieve(num){
 
 ### Maps vs Set which one should you pick?
 [choosing-your-data-structure](https://blog.logrocket.com/javascript-maps-vs-sets-choosing-your-data-structure)
+
+### Challenge #13: A Very Big Sum (HackerRank) 
+[A Very Big Sum](https://www.hackerrank.com/challenges/a-very-big-sum/problem)
+
+[Before we solve Big Sum we must learn what a BigInt is?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
+> A BigInt value, also sometimes just called a BigInt, is a bigint primitive, created by appending n to the end of an integer literal, or by calling the BigInt() function (without the new operator) and giving it an integer value or string value.
+
+```js
+function aVeryBigSum(ar) {
+    // Write your code here
+  let result=0n;
+  for(let i=0;i<ar.length; i++){
+    result+=BigInt(ar[i]);
+  }
+  return result;
+}
+```
+
+### Challenge #14: Plus Minus (HackerRank) 
+[Plus Minus](https://www.hackerrank.com/challenges/plus-minus/problem)
+
+```js
+function plusMinus(arr) {
+    // Write your code here
+  let positive=0;
+  let negative=0;
+  let zero=0;
+  let acount=arr.length;
+  
+  for (let i = 0; i < acount; i++) {
+
+    if (arr[i]>0){
+      positive++;
+      
+    }else if(arr[i]<0){
+      negative++;
+      
+    }else{
+      zero++;
+    }
+  }
+  
+  //console.log(positive,negative,zero);
+  let p=(positive/acount);
+  let n=(negative/acount);
+  let z=(zero/acount);
+  //console.log(p+n+z);
+  console.log(p.toFixed(6));
+  console.log(n.toFixed(6));
+  console.log(z.toFixed(6));
+}
+```
