@@ -1452,3 +1452,48 @@ function plusMinus(arr) {
   console.log(z.toFixed(6));
 }
 ```
+
+### Challenge #15: Staircase (HackerRank) 
+[Staircase](https://www.hackerrank.com/challenges/staircase/problem)
+```js
+//Time Complexity: O(n)
+function staircase(n) {
+    // Write your code here
+  let stair="#";
+  
+  for (let index = 1; index <= n; index++) {
+    console.log(stair.repeat(index).padStart(n,' '));
+  }
+}
+
+// let stair="#";
+// console.log(stair.repeat(1).padStart(6, ' '));
+// console.log(stair.repeat(2).padStart(6, ' '));
+// console.log(stair.repeat(3).padStart(6, ' '));
+// console.log(stair.repeat(4).padStart(6, ' '));
+// console.log(stair.repeat(5).padStart(6, ' '));
+// console.log(stair.repeat(6).padStart(6, ' '));
+console.log(staircase(4));
+```
+
+### Challenge #16: Birthday Cake Candles (HackerRank) 
+[Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles/problem)
+You are in charge of the cake for a child's birthday. You have decided the cake will have one candle for each year of their total age. They will only be able to blow out the tallest of the candles. Count how many candles are tallest.
+
+#### Example
+```js
+let candles = [4,4,1,3];
+
+/*
+ * Complete the 'birthdayCakeCandles' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts INTEGER_ARRAY candles as parameter.
+ */
+
+function birthdayCakeCandles(candles) {
+    // Write your code here
+
+}
+```
+The maximum height candles are  units high. There are  of them, so return .
