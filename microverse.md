@@ -1353,6 +1353,7 @@ function isPrime(number){
 }
 
 //Time Complexity: O(n^2)
+//https://dev.to/atebarhaider/sieve-of-eratosthenes-algorithm-4ol
 function primeSieve(num){
 
   let prime=[];
@@ -1378,3 +1379,6 @@ function primeSieve(num){
 }
 
 ```
+
+### Maps vs Set which one should you pick?
+[choosing-your-data-structure](https://blog.logrocket.com/javascript-maps-vs-sets-choosing-your-data-structure)
