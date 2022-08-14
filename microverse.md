@@ -1475,6 +1475,8 @@ function staircase(n) {
 // console.log(stair.repeat(6).padStart(6, ' '));
 console.log(staircase(4));
 ```
+* [String/padStart](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart)
+
 
 ### Challenge #16: Birthday Cake Candles (HackerRank) 
 [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles/problem)
@@ -1483,7 +1485,12 @@ You are in charge of the cake for a child's birthday. You have decided the cake 
 #### Example
 ```js
 let candles = [4,4,1,3];
+```
+The maximum height candles are  units high. There are  of them, so return .
 
+* [HashMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+
+```js
 /*
  * Complete the 'birthdayCakeCandles' function below.
  *
@@ -1491,9 +1498,38 @@ let candles = [4,4,1,3];
  * The function accepts INTEGER_ARRAY candles as parameter.
  */
 
+//Time Complexity: O(n)
 function birthdayCakeCandles(candles) {
-    // Write your code here
+  
+  // Write your code here
+  let max=0;
+  let hashmap = new Map();
+  //console.log(typeof max, typeof hashmap);
 
+  for (let i = 0; i < candles.length; i++) {
+
+    let c=candles[i];
+    if(c>max){
+      max=c;
+    }
+    if(hashmap.has(c)){
+      let ev=hashmap.get(c);
+      ev=ev+1;
+      hashmap.set(c,ev); //updating existing value
+    }else{
+      hashmap.set(c,1);
+    }
+  }
+  return hashmap.get(max);
 }
+
+// let cc=new Map();
+// cc.set(4,1);
+// console.log(cc);
+// cc.set(4,2);
+// console.log(cc);
+// console.log(cc.has(4));
+// console.log(cc.get(4));
+let tallest=birthdayCakeCandles([4,4,1,3]);
+console.log(tallest);
 ```
-The maximum height candles are  units high. There are  of them, so return .
