@@ -1311,5 +1311,70 @@ console.log(twoSum([3,3],6));
 A prime number is a whole number greater than 1 with exactly two divisors: 1 and itself. For example, 2 is a prime number because it is only divisible by 1 and 2. In contrast, 4 is not prime since it is divisible by 1, 2 and 4.
 
 ```js
+//Time Complexity: O(n^2)
+//Time Complexity: O(n^2)
+function sumPrimes(num){
+  
+  //let prime=[];
+  let result=0;
+
+  for(let i=2; i<=num; i++){
+    // if(isPrime(i)){
+    //   prime.push(i);
+    // }
+    let isPrime=true;
+    for(let j=2; j<i/2; j++){
+      if (i%j==0){
+        isPrime=false;
+      }
+    }
+    
+    if(isPrime){
+      //prime.push(i);
+      result+=i;
+    }
+    
+  }
+  return result;
+}
+//console.log(sumPrimes(10));
+console.log(sumPrimes(977));
+
+//function to check if a number is prime or not.
+function isPrime(number){
+  
+  for(let i=2; i<number; i++){
+    //console.log(number%i);
+    if (number%i==0){
+      return false;
+    }
+  }
+  return true;
+}
+
+//Time Complexity: O(n^2)
+function primeSieve(num){
+
+  let prime=[];
+  for(let i=2; i<=num;i++){
+    prime.push(i);
+  }
+  //console.log(prime, prime.length);
+  let p=2;
+  while( p*p <= num ){
+
+    for(let i=0; i<prime.length;i++){
+
+      let cn=prime[i];
+      //console.log(p, cn);
+      if(cn%p==0 && cn!=p){
+        prime[i]=0;
+      }
+    }
+    //console.log(p, prime);
+    p++;
+  }
+   let res=prime.filter(x=>x>0);
+}
 
 ```
