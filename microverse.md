@@ -1564,3 +1564,33 @@ function breakingRecords(scores) {
 //console.log(breakingRecords([3, 4, 21, 36, 10, 28, 35, 5, 24, 42]));
 console.log(breakingRecords([10, 5, 20, 20, 4, 5, 2, 25, 1]));
 ```
+
+### Challenge #18: Bon Appétit (HackerRank)
+bonAppetit [Bill Division](https://www.hackerrank.com/challenges/bon-appetit/problem) 
+
+```js
+function bonAppetit(bill, k, b) {
+  
+  // Write your code here
+  let dont=bill[k]/2;
+  let result;
+  let sum=0;
+
+  for(let i=0; i<bill.length; i++){
+   sum+=bill[i];  
+  }
+
+  let share=sum/2; 
+  let anasbill = share-dont;
+  let refund= b-anasbill;
+  result=refund;
+
+  if(refund===0){
+    result="Bon Appetit";
+  }
+  console.log(result);
+}
+
+bonAppetit([3, 10, 2, 9], 1, 12); //5
+
+```
