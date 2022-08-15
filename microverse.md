@@ -1594,3 +1594,29 @@ function bonAppetit(bill, k, b) {
 bonAppetit([3, 10, 2, 9], 1, 12); //5
 
 ```
+
+### Challenge #19: Cats and a Mouse (HackerRank) 
+Started at 12:45 PM, Ended at: 01:05 PM, It tooks 20 minutes to solve.
+[Cats and a Mouse](https://www.hackerrank.com/challenges/cats-and-a-mouse/problem)
+
+```js
+function catAndMouse(x, y, z) {
+    
+  let output="";
+
+  let catA = Math.abs(z-x);
+  let catB = Math.abs(z-y);
+
+  if (catA>catB) {
+    output="Cat B";
+    
+  }else if(catA<catB) {
+    output="Cat A";
+    
+  }else{
+    output="Mouse C";
+  }
+  return output;
+}
+//console.log(catAndMouse(2,5,4));
+```
