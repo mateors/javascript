@@ -1620,3 +1620,28 @@ function catAndMouse(x, y, z) {
 }
 //console.log(catAndMouse(2,5,4));
 ```
+
+### Challenge #20: The Hurdle Race x(HackerRank) 
+this takes 16 minutes to solve 
+[The Hurdle Race](https://www.hackerrank.com/challenges/the-hurdle-race/problem)
+
+```js
+function hurdleRace(k, height) {
+  // Write your code here
+  let dose=0;
+  let max=0;
+
+  for (let i = 0; i < height.length; i++) {
+    let c=height[i];
+    if (max<c){
+      max=c;
+    }
+  }
+  if(k<max){
+    dose=max-k;
+  }
+  return dose;
+}
+//console.log(hurdleRace(4, [1, 6, 3, 5, 2]));
+console.log(hurdleRace(7,[2, 5, 4, 5, 2]));
+```
