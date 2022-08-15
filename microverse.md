@@ -1533,3 +1533,34 @@ function birthdayCakeCandles(candles) {
 let tallest=birthdayCakeCandles([4,4,1,3]);
 console.log(tallest);
 ```
+
+### Challenge #17: Breaking the Records (HackerRank) 
+[Breaking the Records](https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem)
+
+```js
+function breakingRecords(scores) {
+  
+  // Write your code here
+  let min=scores[0], max=scores[0], minc=0, maxc=0;
+  let arr=[];
+
+  for (let i = 0; i < scores.length; i++) {
+
+    let score=scores[i];
+    if(score<min){
+      min=score;
+      minc++;
+    }
+    if (score>max){
+      max=score;
+      maxc++;
+    }
+  
+  }
+  arr=[maxc,minc];
+  return arr;
+}
+//console.log(breakingRecords([12,24,10,24]));
+//console.log(breakingRecords([3, 4, 21, 36, 10, 28, 35, 5, 24, 42]));
+console.log(breakingRecords([10, 5, 20, 20, 4, 5, 2, 25, 1]));
+```
