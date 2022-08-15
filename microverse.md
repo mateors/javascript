@@ -1621,7 +1621,7 @@ function catAndMouse(x, y, z) {
 //console.log(catAndMouse(2,5,4));
 ```
 
-### Challenge #20: The Hurdle Race x(HackerRank) 
+### Challenge #20: The Hurdle Race (HackerRank) 
 this takes 16 minutes to solve 
 [The Hurdle Race](https://www.hackerrank.com/challenges/the-hurdle-race/problem)
 
