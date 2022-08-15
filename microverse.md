@@ -1645,3 +1645,11 @@ function hurdleRace(k, height) {
 //console.log(hurdleRace(4, [1, 6, 3, 5, 2]));
 console.log(hurdleRace(7,[2, 5, 4, 5, 2]));
 ```
+
+
+# [Level 6 - JavaScript Advance Challenges](https://docs.google.com/document/d/1oE1T7hmnpX1-a2TDqgZWCKqY_tRCQ7w_6JwSNZcPvEc/edit?usp=sharing)
+
+## Day 1
+Please watch this [introductory video](https://www.loom.com/share/4505897045d24760aa541d42f183ec8b) before getting started
+
+Please watch the intro video and review the resources if the problem includes them.
