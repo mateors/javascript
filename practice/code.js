@@ -166,4 +166,38 @@ function countingValleys(steps, path) {
   return vcount;
 }
 
-console.log(countingValleys(12, "DDUUDDUDUUUD"));
+//console.log(countingValleys(12, "DDUUDDUDUUUD"));
+
+
+function findItem(arr){
+
+    if(arr.length<3){
+        return 0;
+    }
+
+    for(let i=1;i<arr.length; i++){
+
+        let left=arr.slice(0,i);
+        let right=arr.slice(i+1,arr.length);
+
+        //console.log('>',p,left, arr[i], right);
+        if(sum(left)===sum(right)){
+            return arr[i];
+        }
+    }
+    return 0;
+}
+
+function sum(nums){
+
+    let sum=0;
+    for(let i=0;i<nums.length; i++){
+        sum+=nums[i];
+    }
+    return sum;
+}
+
+//console.log(findItem([4,5,8,9]));//8
+//console.log(findItem([5,7,6,4,3,2,3]));//6
+//console.log(findItem([9,7,2,5,1,1]));//7
+console.log(findItem([9,7,]));//0

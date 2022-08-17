@@ -1693,3 +1693,25 @@ function simpleArraySum(ar) {
     return sum;
 }
 ```
+
+### Learning Resource / Accumulator Pattern
+* [Accumulator-pattern](https://education.launchcode.org/intro-to-professional-web-dev/chapters/loops/accumulator-pattern.html)
+> accumulator: a register used to contain the results of an arithmetical or logical operation.
+> The accumulator pattern comes up regularly in programming
+
+### Reversing a String
+While some programming languages have a string method that will reverse a given string, JavaScript does not. Let's see how we can write our own program that reverses a string using the accumulator pattern.
+```js
+let str="Hello";
+let reverse="";
+
+for( let i=0; i<str.length; i++){
+  reverse=str[i]+reverse;
+}
+
+console.log(reverse); //olleH
+```
+
+### Summing an Array
+Another common use of the accumulator pattern is to compute some value using each of the elements of an array.
+
