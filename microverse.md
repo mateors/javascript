@@ -1654,7 +1654,7 @@ Please watch this [introductory video](https://www.loom.com/share/4505897045d247
 
 Please watch the intro video and review the resources if the problem includes them.
 
-[Challenge-1](https://www.hackerrank.com/domains/tutorials/10-days-of-javascript)
+### [Challenge-1](https://www.hackerrank.com/domains/tutorials/10-days-of-javascript)
 
 ```js
 function getGrade(score) {
@@ -1682,3 +1682,14 @@ function getGrade(score) {
 console.log(getGrade(11));
 ```
 
+### [Challenge#2, Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem)
+```js
+function simpleArraySum(ar) {
+    // Write your code here
+    let sum=0;
+    for(let n of ar){
+        sum +=n;
+    }
+    return sum;
+}
+```
