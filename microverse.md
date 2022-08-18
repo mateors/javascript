@@ -2139,3 +2139,19 @@ function frequencies(str){
 const input = "lkazjsdfnvapsifdophoidhjsadlkfjgbplak";
 //console.log(frequencies(input));
 ```
+
+## Daye 5
+> Day 5 - May the Coding Force be with you !
+
+### Hello Fast-trackers!
+You’ve made it to the FINAL DAY! We are so incredibly proud of you. Now you should start learning HTML, CSS, Git and GitHub! You can learn these technologies from Level 7 to Level 12.
+
+You are also ready for the [Admissions Challenges](https://apply.microverse.org) but take into consideration that you will need to complete the rest of the levels before moving on with the trials.
+
+Soon, each one of you will be putting your newly learned skills to work, trying our Admissions Coding Challenges. Hopefully, you will be one step closer to joining Microverse!
+
+We'll be hosting a webinar where we'll be answering questions about the Admissions Process, and the Microverse Program in general. Make sure to register and mark it in your calendar using this link: [Ask Me Anything](https://microverse.zoom.us/webinar/register/4716504473343/WN_vDUMzCw3QHua9y4nhQtK3Q).
+
+On behalf of the entire TEAM here at Microverse, we wish to thank you Micronauts, for the dedication and effort contributed this week. All the BEST in your Coding Challenge!
+
+Let's have an incredible and successful day!
