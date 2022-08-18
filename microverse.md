@@ -1837,4 +1837,82 @@ function missingNumbers(arr, brr) {
   }
   return missing;
 }
+let arr=[203, 204, 205, 206, 207, 208, 203, 204, 205, 206];
+let brr= [203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204];
+console.log(missingNumbers(arr, brr));
 ```
+
+### Day 2 Unguided challenge
+* [Gemstones](https://www.hackerrank.com/challenges/gem-stones/problem)
+
+```js
+function gemstones(arr) {
+  // Write your code here
+ let gemstone=0;
+ let mhash={};
+ //  for (let i = 97; i < 124; i++) {
+ //    var str =String.fromCharCode(i);
+ //    //console.log(str);
+ //    hash[str]=0;
+ //  }
+  //console.log(hash);
+  
+  for (let i = 0; i < arr.length; i++) {
+    let hash={};
+    let item=arr[i];
+    let minerals=item.split('');
+    for(let m of minerals){
+      if(hash[m]===undefined){
+        hash[m] = 1;
+      }else{
+         hash[m] += 1;
+      }
+    }
+    mhash[item]=hash;
+    //console.log(item, hash);
+  }
+  
+  //console.log(mhash);
+  let commons=[];
+  let ncommons=[];
+
+  let citem=mhash[arr[0]];
+  //console.log(arr[0], mhash[arr[0]]);
+
+  for(let [okey,oval] of Object.entries(mhash)){
+    
+    //console.log(okey,oval, Object.keys(citem));
+    let akeys=Object.keys(citem);
+    //console.log(akeys,akeys[1],oval);
+
+    for(let v of Object.keys(citem)){
+      //console.log(typeof v);
+      if (v in oval){
+        //console.log(v,"inside",okey, oval);
+      }else{
+        //console.log(v,"NotInside",okey, oval);
+        ncommons.push(v);
+      }
+    }
+    
+  }
+
+  //find common
+  for(let v of Object.keys(citem)){
+    //console.log(v, typeof v, ncommons.includes(v));
+    if(ncommons.includes(v)==false){
+      commons.push(v);
+      gemstone++;
+    }
+    
+  }
+  //console.log(commons);
+  return gemstone;
+}
+
+// let arr=['abc','abc','bc'];
+// console.log(gemstones(arr));
+let arr=['abcdde', 'baccd', 'eeabg'];
+console.log(gemstones(arr));
+```
+
