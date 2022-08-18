@@ -1779,3 +1779,22 @@ console.log(balanceSumsA([5,7,6,4,3,2,3]));
 
 Learning Resource
 * [Array reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+  
+
+### Day 2 / Problem #2 [Count Objects](https://www.hackerrank.com/challenges/js10-count-objects/problem)
+
+```js
+function getCount(objects) {
+
+  let count=0;
+  let size=objects.length;  
+  //console.log(size);
+  for (let i = 0; i < size; i++) {
+    //console.log(objects[i].x,objects[i]["x"]);
+    if(objects[i].x===objects[i].y){
+      count++;
+    }
+  }
+  return count;
+}
+```
