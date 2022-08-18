@@ -2103,3 +2103,39 @@ function getSecondSmallest(nums) {
 }
 console.log(getSecondSmallest([2, 3, 6, 6, 5])); //3
 ```
+
+### Simple Hashes (Microverse original)
+> Write a function frequencies(arr) that takes in the string:
+`"lkazjsdfnvapsifdophoidhjsadlkfjgbplak"` and return a hash table containing all the different characters in it as the keys, and the number of times each character is repeated as the values
+ 
+Example:
+```
+input: "lkazjsdfnvapsifdophoidhjsadlkfjgbplak"
+ 
+output:  
+{"l":3,"k":3,"a":4,"z":1,"j":3,"s":3,"d":4,"f":3,"n":1,"v":1,"p":3,"i":2,"o":2,"h":2,”g”:1,”b”:1};
+```
+
+```js
+function frequencies(str){
+  
+ // Answer here
+ let sarr=str.split('');
+ let hmap = {}
+
+  for (let i = 0; i < sarr.length; i++) {
+    
+    let letter=sarr[i];
+    if(hmap[letter]===undefined){
+      hmap[letter]=1;
+    }else{
+      hmap[letter] +=1;
+    }
+  }
+  //console.log(hmap);
+  return hmap;
+}
+
+const input = "lkazjsdfnvapsifdophoidhjsadlkfjgbplak";
+//console.log(frequencies(input));
+```
