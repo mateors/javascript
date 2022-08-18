@@ -1800,7 +1800,8 @@ function getCount(objects) {
 ```
 
 ### Day 2 Problem #4 Missing Numbers
-[Missing Numbers](https://www.hackerrank.com/challenges/missing-numbers/problem)
+* [Missing Numbers](https://www.hackerrank.com/challenges/missing-numbers/problem)
+* [Learning Resource-JavaScript Object Entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
 
 ```js
 function missingNumbers(arr, brr) {
