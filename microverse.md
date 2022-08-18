@@ -2155,3 +2155,44 @@ We'll be hosting a webinar where we'll be answering questions about the Admissio
 On behalf of the entire TEAM here at Microverse, we wish to thank you Micronauts, for the dedication and effort contributed this week. All the BEST in your Coding Challenge!
 
 Let's have an incredible and successful day!
+
+### Coding challenge submit
+
+### Applicant Check-In
+Please confirm that you are available to spend 12 hours collaborating with 3 different partners as part of the Microverse Trials. *
+Over the next 1-2 business days, you will be paired with 3 other applicants 👩🏻‍💻👨🏾‍💻👨🏼‍💻, and will meet with each of them for 4 hours to build 3 different programming projects. 
+
+
+[Choose your timezone](https://www.timeanddate.com/worldclock/converter.html?iso=20220818T161500&p1=3903&p2=73)
+[Internet speed test](http://microverse.speedtestcustom.com)
+
+[Internet speed test result](http://microverse.speedtestcustom.com/result/4e222130-1eef-11ed-a682-074cee258296)
+* Download: 9MB
+* Upload: 4.7 MB
+* Jitter: 3ms
+* Ping: 2ms
+* Packet Lost: 0%
+
+In order to join our full-time program, the following Internet connectivity requirements [must be met](http://bit.ly/Microverse-Internet-reqs):
+
+- Download speed must be ABOVE 3 Mbps
+
+- Upload speed must be 1 Mbps and ABOVE
+
+- Jitter must be BELOW 30 ms
+
+- Ping/Latency must be BELOW 150 ms
+
+- Packet loss must be BELOW, or equal to, 1%
+
+> `ping -n 100 8.8.8.8`
+
+
+### Record a 1-2 minute video introducing yourself and telling us why you want to join Microverse.
+Remember to:
+- Use your computer 💻, not your phone
+- Enable and test your webcam and microphone🎙
+- Introduce yourself (name and location)
+- Explain why you want to join Microverse (please don't read from a script)
+
+> Any quesion in your mind? [Ask me anything](https://microverse.zoom.us/webinar/register/4716504473343/WN_vDUMzCw3QHua9y4nhQtK3Q)
