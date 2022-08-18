@@ -1798,3 +1798,42 @@ function getCount(objects) {
   return count;
 }
 ```
+
+### Day 2 Problem #4 Missing Numbers
+[Missing Numbers](https://www.hackerrank.com/challenges/missing-numbers/problem)
+
+```js
+function missingNumbers(arr, brr) {
+  // Write your code here
+  let hash={};
+
+  for (let i = 0; i < arr.length; i++) {
+    let key=arr[i];
+    hash[key]=0;
+  }
+  //console.log(hash);
+  
+  for (let i = 0; i < arr.length; i++) {
+    let key=arr[i];
+    hash[key] += 1;
+  }
+  //console.log(hash);
+  
+    for (let i = 0; i < brr.length; i++) {
+      let key=brr[i];
+      hash[key] -= 1;
+    }
+
+  //Object.entries(hash)
+  //Object.keys(hash)
+  //console.log(typeof hash, typeof Object.entries(hash), typeof Object.keys(hash));
+  let missing=[];
+  for(let [key,val] of Object.entries(hash)){
+    //console.log(key,val, typeof val);
+    if(val!==0){
+      missing.push(key);
+    }
+  }
+  return missing;
+}
+```
