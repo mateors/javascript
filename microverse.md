@@ -1916,3 +1916,46 @@ let arr=['abcdde', 'baccd', 'eeabg'];
 console.log(gemstones(arr));
 ```
 
+### Day 3 challenge
+* [sum-of-all-odd-length-subarrays](https://leetcode.com/problems/sum-of-all-odd-length-subarrays)
+
+```js
+//Time Complexity: O(n^2)
+function SumofAllOddLength(arr){
+
+  let sum=0;
+  let size=arr.length;
+  //let sarr=[];
+  let ola=[]; //odd length array
+  for(let i=1; i<=size; i++){
+    if(i%2!=0){
+      ola.push(i);
+    }
+  }
+  //console.log(ola); //1,3,5
+
+  for(let length of ola){
+    
+    //console.log('>',length);
+    // console.log(arr.slice(0,0+1));
+    // console.log(arr.slice(1,1+1));
+    // console.log(arr.slice(2,2+1));
+    // console.log(arr.slice(3,3+1));
+    // console.log(arr.slice(4,4+1));
+    for (let i = 0; i < size; i++) {
+
+      if(i+length<=size){
+        //console.log(arr.slice(i,i+length));
+        let suba=arr.slice(i,i+length);
+        //sarr.push(arr.slice(i,i+length));
+        for(let x of suba){
+           sum+=x;
+        }
+      }
+    }
+  }
+  //console.log(sarr);
+  return sum;
+}
+
+```
