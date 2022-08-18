@@ -2054,3 +2054,52 @@ if(out1 == out2){
  console.log("Whoops, try again!");
 }
 ```
+
+#### Solve "Second Greatest" problem
+[Second Greatest](https://www.hackerrank.com/challenges/js10-arrays/problem)
+
+```js
+/**
+*   Return the second largest number in the array.
+*   @param {Number[]} nums - An array of numbers.
+*   @return {Number} The second largest number in the array.
+**/
+
+//Time Complexity: O(n)
+function getSecondLargest(nums) {
+  
+  // Complete the function
+  let map = [];
+  for (let i = 0; i < nums.length; i++) {
+
+     let snum=nums[i];
+     if(map.includes(snum)==false){
+       map.push(snum); //unique array
+     }
+  }
+  let sorted=map.sort((a,b)=> a-b);
+  return sorted[sorted.length-2];
+}
+console.log(getSecondLargest([2, 3, 6, 6, 5,])); //5
+
+```
+
+#### Find the Second Smallest number
+Solve "Second Greatest" problem, but instead, find the Second Smallest number: but instead, find the Second Smallest number.
+```js
+function getSecondSmallest(nums) {
+  
+  // Complete the function
+  let map = [];
+  for (let i = 0; i < nums.length; i++) {
+
+     let snum=nums[i];
+     if(map.includes(snum)==false){
+       map.push(snum); //unique array
+     }
+  }
+  let sorted=map.sort((a,b)=> a-b);
+  return sorted[1];
+}
+console.log(getSecondSmallest([2, 3, 6, 6, 5])); //3
+```
