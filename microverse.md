@@ -1959,3 +1959,43 @@ function SumofAllOddLength(arr){
 }
 
 ```
+
+### Day 3 
+[Apple and Orange](https://www.hackerrank.com/challenges/apple-and-orange/problem)
+
+```js
+function countApplesAndOranges(s, t, a, b, apples, oranges) {
+    // Write your code here
+
+  //range between s and t
+  let ac=0;
+  let oc=0;
+  
+  let arr=[];
+  let oarr=[];
+
+  for (let i = 0; i < apples.length; i++) {
+    let apple=apples[i];
+    let fapple=a+apple;
+    //arr.push(fapple);
+    if (fapple>=s && fapple<=t){
+      ac++;
+    }
+  }
+
+  for (let i = 0; i < oranges.length; i++) {
+    let orange=oranges[i];
+    let forange=b+orange;
+    //arr.push(fapple);
+    if (forange>=s && forange<=t){
+      oc++;
+    }
+  }
+
+  console.log(ac);
+  console.log(oc);
+  //console.log(arr);
+}
+console.log(countApplesAndOranges(7,11,5,15,[-2,2,1],[5,-6]));
+```
+
