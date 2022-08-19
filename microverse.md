@@ -2196,3 +2196,10 @@ Remember to:
 - Explain why you want to join Microverse (please don't read from a script)
 
 > Any quesion in your mind? [Ask me anything](https://microverse.zoom.us/webinar/register/4716504473343/WN_vDUMzCw3QHua9y4nhQtK3Q)
+
+## Feedback after 6 hours
+
+* [What will I learn at Microverse?](https://support.microverse.org/en/articles/1908266-what-will-i-learn-at-microverse)
+* [Microverse Full-Stack Web Development Syllabus](https://drive.google.com/file/d/1dCDwTatfExRFBhGzzpDYwx1MTYXRAWQj/view)
+
+Course coordinator - Ruben Pire rubenpire7@gmail.com
