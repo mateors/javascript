@@ -2206,11 +2206,18 @@ Course coordinator - Ruben Pire rubenpire7@gmail.com
 
 
 ## Level 7
-Unofficial resource to learn
+Official and Unofficial resource to learn
+
+[ultimate-guide-to-preparing-for-the-coding-interview](https://www.microverse.org/blog/ultimate-guide-to-preparing-for-the-coding-interview)
+
+[A hands-on introduction to all of the essential tools you'll need to build real, working websites.](https://www.theodinproject.com/paths/foundations/courses/foundations#the-front-end)
+
+[grokking-the-coding-interview](https://designgurus.org/course/grokking-the-coding-interview)
 
 * Computer Science fundamentals
 Spaced repetition, also known as distributed practice, is an extremely effective approach for internalizing knowledge into long-term memory.
 
+* [Learn the patterns and solve any problem](https://algo.monster/?sscid=d1k6_2fmo6&)
 * Binary search
 * Breadth-first search
 * Depth-first search
@@ -2224,3 +2231,4 @@ Spaced repetition, also known as distributed practice, is an extremely effective
 * [software-engineering-interview-guide](https://www.techinterviewhandbook.org/software-engineering-interview-guide)
 * [Front-end web developer](https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer)
 * [CSS building blocks](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
+* [Any language docs](https://devdocs.io)
