@@ -2203,3 +2203,24 @@ Remember to:
 * [Microverse Full-Stack Web Development Syllabus](https://drive.google.com/file/d/1dCDwTatfExRFBhGzzpDYwx1MTYXRAWQj/view)
 
 Course coordinator - Ruben Pire rubenpire7@gmail.com
+
+
+## Level 7
+Unofficial resource to learn
+
+* Computer Science fundamentals
+Spaced repetition, also known as distributed practice, is an extremely effective approach for internalizing knowledge into long-term memory.
+
+* Binary search
+* Breadth-first search
+* Depth-first search
+* Two pointers
+* Priority Queue
+
+
+* [Web Development 101 course](https://www.theodinproject.com/paths/foundations/courses/foundations#the-front-end)
+* [ultimate-guide-to-preparing-for-the-coding-interview](https://www.microverse.org/blog/ultimate-guide-to-preparing-for-the-coding-interview)
+* [English Test](https://www.efset.org)
+* [software-engineering-interview-guide](https://www.techinterviewhandbook.org/software-engineering-interview-guide)
+* [Front-end web developer](https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer)
+* [CSS building blocks](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
