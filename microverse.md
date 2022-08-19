@@ -2232,3 +2232,32 @@ Spaced repetition, also known as distributed practice, is an extremely effective
 * [Front-end web developer](https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer)
 * [CSS building blocks](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
 * [Any language docs](https://devdocs.io)
+
+#### cascade, specificity, and inheritance
+These three concepts (cascade, specificity, and inheritance) together control which CSS applies to what element
+
+* an element selector has low specificity and can be overwritten by a class.
+* a class selector has more weight than an element selector
+* identifier has more weight than class selector
+
+#### Inline styles
+Inline styles take precedence over all normal styles, no matter the specificity,  their specificity can be construed as 1-0-0-0
+
+#### !important
+There is a special piece of CSS that you can use to overrule all of the above calculations, even inline styles - the !important flag. However, you should be very careful while using it.
+
+One situation in which you may have to use the !important flag is when you are working on a CMS where you can't edit the core CSS modules, and you really want to override an inline style or an important declaration that can't be overridden in any other way. But really, don't use it if you can avoid it.
+
+#### The effect of CSS location
+Finally, it is important to note that the precedence of a CSS declaration depends on what stylesheet and cascade layer it is specified in.
+
+you can make non-layered styles override styles declared in layers or you can make styles declared in later layers override styles from earlier declared layers. 
+
+> non-layered/un-layered styles have the highest priority
+
+
+* [Microverse Trials: Collaborative Project](https://microverse.pathwright.com/library/microverse-trials-collaborative-project-32595/68742/path)
+
+### Microverse Success Story
+[Microverse Student Landed a Remote Job in Silicon Valley](https://www.microverse.org/blog/finding-focus-how-microverse-alumni-musa-jabbaaru-ntege-landed-a-job-in-silicon-valley)
+
