@@ -2315,3 +2315,39 @@ CSS 1
 * [Lock an Element to the Browser Window with Fixed Positioning](https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/lock-an-element-to-the-browser-window-with-fixed-positioning) | freeCodeCamp.org
 * [Push Elements Left or Right with the float Property](https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/push-elements-left-or-right-with-the-float-property) | freeCodeCamp.org
 * [Change the Position of Overlapping Elements with the z-index Property](https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/change-the-position-of-overlapping-elements-with-the-z-index-property) | freeCodeCamp.org
+
+
+# Level 11 / Git
+
+Complete this exercise [click on the link](https://github.com/microverseinc/curriculum-levelup/blob/main/git-github/git_basics_exercise.md)
+
+> NOTE: You will need a partner to complete the exercise.
+
+
+
+# Level 12
+
+
+### What JavaScript Can't Do
+JavaScript is a client-side language; that is, it is designed to do its work on your machine, not on the server. Because of this, JavaScript has some limitations built-in, mostly for security reasons:
+
+* JavaScript does not allow the reading or writing of files on client machines. That's a good thing, because you certainly don't want a Web page to be able to read files off of your hard disk, or be able to write viruses onto your disk, or be able to manipulate the files on your computer. The only exception is that JavaScript can write to the browser's cookie file, and even then there are limitations (for more information about cookies, see Chapter 10).
+
+* JavaScript does not allow the writing of files on server machines. There are a number of ways in which this would be handy (such as storing page hit counts or filled-out form data), but JavaScript isn't allowed to do that. Instead, you'll need to have a program on your server to handle and store this data. This can be, for example, a CGI written in a language such as Perl or PHP, or a Java program.
+
+* JavaScript cannot close a window that it hasn't opened. This is to avoid a situation where a site takes over your browser, closing windows from any other sites.
+
+* JavaScript cannot read information from an opened Web page that came from another server. In other words, a Web page can't read any information from other open windows and find out what else a surfer visiting the site is up to.
+
+## Project
+Remember - the point here is to learn how to work with GitHub Classroom assignments.
+
+### How to use Github classroom
+[How to use GitHub Classroom?](https://www.youtube.com/watch?v=IctIsXa-1eI)
+
+In order to accept the “Play with GH Classroom” assignment - [click this link](https://github.com/login/oauth/authorize?client_id=Iv1.a84bfcae38835499&redirect_uri=https%3A%2F%2Fclassroom.github.com%2Fauth%2Fgithub%2Fcallback&response_type=code&state=e33d03abb55232ef86bd9de51ec8a8c357be5702ea14ea64)
+
+## Building your website
+
+### Troubleshooting GitHub Classroom assignments
+If you cannot see any workflows on the Actions page, learn [how to fix it](https://github.com/microverse-students/autograding-troubles-js/blob/main/README.md)
