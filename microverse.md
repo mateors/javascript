@@ -2295,3 +2295,23 @@ CSS 1
 * Learn Basic CSS: [Specify How Fonts Should Degrade](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/specify-how-fonts-should-degrade) | freeCodeCamp.org
 * Learn Basic CSS: [Size Your Images](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/size-your-images) | freeCodeCamp.org
 * Learn Basic CSS: [Add Borders Around Your Elements](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/add-borders-around-your-elements) | freeCodeCamp.org
+
+
+# Level 10
+
+* Learn Basic CSS: Give a Background Color to a div Element | freeCodeCamp.org
+* [Create Texture by Adding a Subtle Pattern as a Background Image](https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/create-texture-by-adding-a-subtle-pattern-as-a-background-image) | freeCodeCamp.org
+* Learn Basic CSS: Set the id of an Element | freeCodeCamp.org
+* Learn Basic CSS: Use an id Attribute to Style an Element | freeCodeCamp.org
+* Learn Basic CSS: [Adjust the Padding of an Element](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/adjust-the-padding-of-an-element) | freeCodeCamp.org
+* Learn Basic CSS: Adjust the Margin of an Element | freeCodeCamp.org
+* Learn Basic CSS: [Use Clockwise Notation to Specify the Padding of an Element](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-clockwise-notation-to-specify-the-padding-of-an-element) | freeCodeCamp.org
+* Learn Basic CSS: [Understand Absolute versus Relative Units](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/understand-absolute-versus-relative-units) | freeCodeCamp.org
+* Learn Basic CSS: Style the HTML Body Element | freeCodeCamp.org
+* Learn Basic CSS: Use Hex Code for Specific Colors | freeCodeCamp.org
+* Change an Element's Relative Position | freeCodeCamp.org
+* Move a Relatively Positioned Element with CSS Offsets | freeCodeCamp.org
+* Lock an Element to its Parent with Absolute Positioning | freeCodeCamp.org
+* [Lock an Element to the Browser Window with Fixed Positioning](https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/lock-an-element-to-the-browser-window-with-fixed-positioning) | freeCodeCamp.org
+* [Push Elements Left or Right with the float Property](https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/push-elements-left-or-right-with-the-float-property) | freeCodeCamp.org
+* [Change the Position of Overlapping Elements with the z-index Property](https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/change-the-position-of-overlapping-elements-with-the-z-index-property) | freeCodeCamp.org
