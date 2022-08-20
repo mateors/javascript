@@ -2263,3 +2263,20 @@ you can make non-layered styles override styles declared in layers or you can ma
 
 # Level 7
 [Just an introduction to Web development](https://docs.google.com/presentation/d/1MoZbBtLZbves69fBNsuxl-rHr5PwhpqQlmRtciDm2ro/edit?usp=sharing)
+
+# Level 8
+* Learn Basic HTML and HTML5: Say Hello to HTML Elements | freeCodeCamp.org
+* Learn Basic HTML and HTML5: Headline with the h2 Element | freeCodeCamp.org
+* Learn Basic HTML and HTML5: Inform with the Paragraph Element | freeCodeCamp.org
+* Learn Basic HTML and HTML5: Add Images to Your Website | freeCodeCamp.org
+* Learn Basic HTML and HTML5: Link to External Pages with Anchor Elements | freeCodeCamp.org
+* Learn Basic HTML and HTML5: Nest an Anchor Element within a Paragraph | freeCodeCamp.org
+* Learn Basic HTML and HTML5: Make Dead Links Using the Hash Symbol | freeCodeCamp.org
+* Learn Basic HTML and HTML5: Turn an Image into a Link | freeCodeCamp.org
+* Learn Basic HTML and HTML5: Create a Bulleted Unordered List | freeCodeCamp.org
+* Learn Basic HTML and HTML5: Create an Ordered List | freeCodeCamp.org
+* Learn Basic HTML and HTML5: Create a Text Field | freeCodeCamp.org
+* Learn Basic HTML and HTML5: Create a Form Element | freeCodeCamp.org
+* Learn Basic HTML and HTML5: Add a Submit Button to a Form | freeCodeCamp.org
+* [Learn Basic HTML and HTML5: Nest Many Elements within a Single div Element](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/nest-many-elements-within-a-single-div-element) | freeCodeCamp.org
+* [Learn Basic HTML and HTML5: Define the Head and Body of an HTML Document](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/define-the-head-and-body-of-an-html-document) | freeCodeCamp.org
