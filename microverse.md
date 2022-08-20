@@ -2280,3 +2280,18 @@ you can make non-layered styles override styles declared in layers or you can ma
 * Learn Basic HTML and HTML5: Add a Submit Button to a Form | freeCodeCamp.org
 * [Learn Basic HTML and HTML5: Nest Many Elements within a Single div Element](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/nest-many-elements-within-a-single-div-element) | freeCodeCamp.org
 * [Learn Basic HTML and HTML5: Define the Head and Body of an HTML Document](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/define-the-head-and-body-of-an-html-document) | freeCodeCamp.org
+
+
+# Level 9
+CSS 1
+
+* Learn Basic CSS: Change the Color of Text | freeCodeCamp.org
+* Learn Basic CSS: Use CSS Selectors to Style Elements | freeCodeCamp.org
+* Learn Basic CSS: Use a CSS Class to Style an Element | freeCodeCamp.org
+* Learn Basic CSS: Style Multiple Elements with a CSS Class | freeCodeCamp.org
+* Learn Basic CSS: Change the Font Size of an Element | freeCodeCamp.org
+* Learn Basic CSS: Set the Font Family of an Element | freeCodeCamp.org
+* Learn Basic CSS: [Import a Google Font](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/import-a-google-font) | freeCodeCamp.org
+* Learn Basic CSS: [Specify How Fonts Should Degrade](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/specify-how-fonts-should-degrade) | freeCodeCamp.org
+* Learn Basic CSS: [Size Your Images](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/size-your-images) | freeCodeCamp.org
+* Learn Basic CSS: [Add Borders Around Your Elements](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/add-borders-around-your-elements) | freeCodeCamp.org
