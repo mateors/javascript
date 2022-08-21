@@ -2351,3 +2351,16 @@ In order to accept the “Play with GH Classroom” assignment - [click this lin
 
 ### Troubleshooting GitHub Classroom assignments
 If you cannot see any workflows on the Actions page, learn [how to fix it](https://github.com/microverse-students/autograding-troubles-js/blob/main/README.md)
+
+
+
+## Submit Your Project & Provide Feedback
+You are one step closer to joining Microverse! 🙌
+
+Use this form to submit each of the projects you complete with your partners. Each project must have been completed synchronously using pair programming over video conferencing.
+
+You will also answer some questions about your experience with your coding partner. We value your opinion greatly, so please be truthful in your answers.   If you both give each other good reviews and get accepted, you may become coding partners for the full-time program.
+
+Your project will not be evaluated until both you and your partner submit this form, so please make sure you both complete this in a timely manner.
+
+*If your partner did not show up or respond to your emails, please submit the re-pairing request form listed in your partner introductory email. DO NOT submit this form.*
