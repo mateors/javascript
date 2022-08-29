@@ -46,13 +46,15 @@ console.log(`default width x height: ${canvas.width} x ${canvas.height}`);
 ### getContext()* may have the following parameter
 * 2d
 * webgl
+* webgl2
+* bitmaprenderer
 * experimental-webgl
 
 ### Get all the properties & Methods available in [CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D)
 console.log(ctx.canvas);
 
 ### Properties
-* canvas
+* [canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
 * direction
 * strokeStyle
 * fillStyle
@@ -109,7 +111,30 @@ console.log("AvailableWidth",window.screen.availWidth);
 console.log("AvailableHeight:",window.screen.availHeight);
 ```
 
+
 The HTMLCanvasElement interface provides properties and methods for manipulating the layout and presentation of `<canvas>` elements. The HTMLCanvasElement interface also inherits the properties and methods of the HTMLElement interface.
 ### [Properties & Methods of HTMLCanvasElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement)
 
 ### Further study [HTML CANVAS DEEP DIVE](https://joshondesign.com/p/books/canvasdeepdive/toc.html)
+
+Drawing a rectangle using lineTo method with blue border outline (strokeStyle)
+```js
+ctx.moveTo(50,50); //starting point
+ctx.lineTo(100,50); //first line
+ctx.lineTo(100,100);//second line
+ctx.lineTo(50,100);//third line
+ctx.lineTo(50,50);//fourth line
+ctx.strokeStyle="blue";
+ctx.stroke();
+```
+
+Drawing a rectangle using lineTo method with fill style
+```js
+ctx.moveTo(60,60); //starting point
+ctx.lineTo(120,60); //first line
+ctx.lineTo(120,120);//second line
+ctx.lineTo(60,120);//third line
+ctx.lineTo(60,60);//fourth line
+ctx.fillStyle="blue"; //default = black
+ctx.fill();
+```
