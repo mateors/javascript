@@ -6,17 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>DragAndDrop</title>
+    <style>
+        /* .musfika{
+            display: block;
+            box-sizing: border-box;
+            border: 0;
+            width: 500px;
+            min-height: 200px;
+            height: auto;
+            background-color: aqua;
+            font-size: 80px;
+            overflow:hidden;
+            word-wrap: break-word;
+        }
+
+        .musfika:hover{
+            border: 1px solid red;
+        } */
+    </style>
 </head>
 <body>
 
-    <div class="container">
+    <!-- <div class="field" contenteditable="true"></div> -->
 
-        <div class="row">
-            <label for="" contenteditable="true">Name</label>
-            <input type="text" name="name" class="" placeholder="Name" value="" />
+    
+
+    <div class="container" id="container">
+
+        <div class="row" data-id="1" draggable="true">
+            <div class="field" contenteditable="true">One</div>
         </div>
 
-    </div>
+        <div class="row" data-id="2" draggable="true">
+            <div class="field" contenteditable="true">Two</div>
+        </div>
+
+        <div class="row" data-id="3" draggable="true">
+            <div class="field" contenteditable="true">Three</div>
+        </div>
+
+    </div> 
     
     <script src="./dragndrop.js"></script>
 </body>
