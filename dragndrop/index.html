@@ -33,9 +33,60 @@
 
     <div class="container" id="container">
 
+
         <div class="row" data-id="1" draggable="true">
-            <div class="field" contenteditable="true">One</div>
+
+            <!--move button goes here-->
+           <div class="part1">move</div>
+
+
+           <div class="part2">
+
+                <div class="wi3">
+
+                    <div class="field" contenteditable="true">One</div>
+
+                    <div class="i2button" role="button"><div class="abtn">span</div></div>
+        
+                    <div class="i3dropdown">
+                        <div class="dropdown">
+                            <select name="element_type">
+                                <option value="text">Single line Text</option>
+                                <option value="textarea">Multiline Text / Paragraph</option>
+                                <option value="radio">Multiple choice</option>
+                                <option value="checkbox">Checkboxes</option>
+                                <option value="dropdown">Dropdown</option>
+                                <option value="file">File upload</option>
+                                <option value="date">Date</option>
+                                <option value="time">Time</option>
+                                <option value="linear_scale">Linear scale</option>
+                                <option value="radio_grid">Multiple choice grid</option>
+                                <option value="radio_grid">Checkbox grid</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="option_description"></div>
+
+           </div> 
+
+
+           <div class="part3">
+
+                <!---part1 related option will be displayed here--->          
+                <div class="upper">description</div>
+
+                <!----duplicate, delete, required and more_option--->
+                <div class="lower">copy, delete, required</div>
+
+           </div>
+
+
         </div>
+
+
 
         <div class="row" data-id="2" draggable="true">
             <div class="field" contenteditable="true">Two</div>

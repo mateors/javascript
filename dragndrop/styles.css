@@ -65,6 +65,44 @@ body{
 }
 
 
+.wi3{
+ display: flex;
+ background-color: white;
+}
+
+.imguo{
+ display: inline-block;
+ width: 48px;
+ height: 48px;
+ border-radius: 24px;
+ background-color: red;
+ background-image: url('imagea.png');
+ overflow: hidden;
+}
+
+.btn{
+    -webkit-user-select: none;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+    border: 0;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    height: 48px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    width: 48px;
+    z-index: 0;
+}
+
+
 .table {display:block; }
 .row { display:block;}
 .cell {display:inline-block;}
+

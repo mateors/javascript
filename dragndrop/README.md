@@ -9,6 +9,11 @@ Whenever the user mouse moves towards the Y axis, client.Y value decreases and w
 * For nested `div` we will follow a naming convention
 * Inside HTML Body element there always will be a main container `div` which contains all the div inside (nesting)
 
+```css
+wi3 = wrapper item 3
+
+```
+
 
 ## Resource
 * [Web/Node API](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)

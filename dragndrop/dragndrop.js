@@ -1,7 +1,5 @@
 console.log("Drag and drop test...");
 
-let dragOverItem;
-
 const draggables = document.querySelectorAll('.container');
 const dragListItems = document.querySelectorAll('.row');
 
@@ -21,6 +19,7 @@ dragListItems.forEach(item => {
 let dragItem;
 let starty=0;
 let mouseupdown="down";
+let dragOverItem;
 
 document.addEventListener("mousedown", function(e){
 
@@ -51,47 +50,72 @@ function dragStart(e) {
   function dragOver(e) {
     // console.log('Event: ', 'dragover');
     e.preventDefault();
-    console.log("dragOver",this.getAttribute('data-id'));
+    //console.log("dragOver",this.getAttribute('data-id'));
     
     if(e.clientY<starty){
         mouseupdown="up";
     }else{
         mouseupdown="down";
     }
-    console.log(e.clientY,mouseupdown);
+    //console.log(e.clientY,mouseupdown);
+    dragOverItem=e.target.parentNode;
+  }
+
+  function isDescendant(parent, child) {
+    var node = child.parentNode;
+    while (node != null) {
+        if (node == parent) {
+            return true;
+        }
+        node = node.parentNode;
+    }
+    return false;
   }
 
   function dragDrop(e) { //drop
 
       const dragEndIndex = this.getAttribute('data-id');
       //console.log('Drop after: ', dragEndIndex, e.target.parentNode);
-      console.log(dragListItems, e.target.parentNode);
-    //swapItems(dragStartIndex, dragEndIndex);
-
+      //console.log(dragListItems, e.target.parentNode);
+      //draggables.removeChild(e.target.parentNode);
+      //document.getElementById("container").removeChild(e.target.parentNode);
+      //document.getElementById("container").appendChild(dragItem);
     
-
-    //draggables.removeChild(e.target.parentNode);
-    //document.getElementById("container").removeChild(e.target.parentNode);
-
-    //document.getElementById("container").appendChild(dragItem);
-
-    document.getElementById("container").removeChild(dragItem);
 
     if(mouseupdown=="down"){
 
-        document.getElementById("container").insertBefore(dragItem, e.target.parentNode.nextSibling); //after
+        let parent=document.getElementById("container");
+        let child=e.target.parentNode.nextSibling;
+        console.log("isDescendant:",isDescendant(parent, child), dragOverItem);
+
+        if (isDescendant(parent, child)==true){
+          document.getElementById("container").removeChild(dragItem);
+          document.getElementById("container").insertBefore(dragItem, e.target.parentNode.nextSibling); //after
+        }
+
     }
 
     if(mouseupdown=="up"){
+
+      let parent=document.getElementById("container");
+      let child=e.target.parentNode;
+
+      screen.orientation.lock('portrait').catch(function(error) {
+        // whatever
+        console.log("DOMException");
+      });
+
+      if (isDescendant(parent, child)==true){
+        document.getElementById("container").removeChild(dragItem);
         document.getElementById("container").insertBefore(dragItem, e.target.parentNode);
+      }
+
     }
 
     starty=0;
     mouseupdown="down";
-    //element.parentNode.insertBefore(newElement, element.nextSibling);
-
- 
   }
+
 /*
 
 window.addEventListener("drag", function(e){
