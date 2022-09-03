@@ -28,3 +28,8 @@ A service worker is a script that your browser runs in the background, separate 
 ## Async Javascript tutorial
 * [Traversey Media](https://www.youtube.com/watch?v=PoRJizFvM7s)
 * [JavaScript>](https://learnjavascript.online)
+
+## Few more Advance Javascript Tutorial
+* [JavaScript DOM Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V)
+* [Making sense of the tricky part of Javascript](https://www.youtube.com/watch?v=tiRhFGnCltw)
+* [Advance Javascript complete course](https://www.youtube.com/watch?v=4svkAH9TdrU)
