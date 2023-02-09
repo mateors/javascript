@@ -10,6 +10,9 @@
 ## Aync
 * [Async-functions](https://developers.google.com/web/fundamentals/primers/async-functions)
 
+## IIFE
+[Immediately Invoked Function Expression](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
+
 ## Promises (JavaScript exceptions and promises)
 * https://web.dev/promises
 
